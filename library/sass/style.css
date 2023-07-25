@@ -5,4 +5,83 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Inter", Verdana, sans-serif;
+}
+
+h1 {
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header {
+  background: #0c0c0e;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Forum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+}
+
+.menu {
+  display: flex;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 5rem;
+}
+
+.menu-link {
+  list-style: none;
+  padding: 0 15px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
