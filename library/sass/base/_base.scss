@@ -16,6 +16,12 @@ h1 {
   letter-spacing: 0.6px;
 }
 
+h1:hover {
+  color: $color-additional;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
 h2 {
   font-family: Forum;
   font-size: 40px;

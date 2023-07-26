@@ -16,6 +16,12 @@ h1 {
   letter-spacing: 0.6px;
 }
 
+h1:hover {
+  color: #bb945f;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
 h2 {
   font-family: Forum;
   font-size: 40px;
@@ -118,17 +124,12 @@ h4 {
 
 .menu {
   display: flex;
-  color: #ffffff;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 5rem;
   padding-left: 0;
 }
 
 .menu-link {
   list-style: none;
   padding: 0 15px;
-  cursor: pointer;
 }
 
 .menu-link:first-child {
@@ -137,6 +138,37 @@ h4 {
 
 .menu-link:last-child {
   padding-right: 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 5rem;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #bb945f;
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.nav-link:hover {
+  color: #bb945f;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 .icon-profile {
