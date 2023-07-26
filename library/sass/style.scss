@@ -1,9 +1,12 @@
 @import "abstract/constants";
 
-//Base
+// Base
 @import "base/base";
 @import "base/buttons";
 
 // Layouts
 @import "layouts/container";
 @import "layouts/header";
+
+// Components
+@import "components/welcome";

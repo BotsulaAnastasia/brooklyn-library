@@ -8,13 +8,12 @@ body {
 }
 
 h1 {
+  color: #ffffff;
   font-family: Forum;
-  font-size: 40px;
-  font-style: normal;
+  font-size: 30px;
   font-weight: 400;
   line-height: 50px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  letter-spacing: 0.6px;
 }
 
 h2 {
@@ -97,7 +96,6 @@ h4 {
 
 .header {
   background: #0c0c0e;
-  padding: 20px 0;
 }
 
 .header-container {
@@ -108,12 +106,7 @@ h4 {
 
 .logo {
   text-decoration: none;
-  color: #ffffff;
-  font-family: Forum;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 50px;
-  letter-spacing: 0.6px;
+  margin-left: 20px;
 }
 
 .menu {
@@ -128,4 +121,33 @@ h4 {
   list-style: none;
   padding: 0 15px;
   cursor: pointer;
+}
+
+.welcome-container {
+  display: flex;
+  background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%), url("../img/welcome/welcome_bg.jpg"), lightgray 50%/cover no-repeat;
+}
+
+.welcome-content {
+  display: flex;
+  width: 600px;
+  box-sizing: border-box;
+  padding: 35px 40px;
+  margin: 220px 840px 160px 0;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  background: #0c0c0e;
+}
+
+.welcome-text {
+  color: #ffffff;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
