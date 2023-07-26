@@ -46,6 +46,50 @@ h4 {
   text-transform: uppercase;
 }
 
+.button {
+  font-family: "Inter", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.small-button-buy {
+  font-size: 1rem;
+  color: #0c0c0e;
+  padding: 9px 27px;
+  border: 1px solid #0c0c0e;
+}
+
+.small-button-buy:hover {
+  border: 1px solid #bb945f;
+  background: #bb945f;
+}
+
+.small-button-brown {
+  font-size: 1rem;
+  color: #bb945f;
+  padding: 9px 25px;
+  border: 1px solid #bb945f;
+}
+
+.big-button-black {
+  font-size: 2rem;
+  color: #0c0c0e;
+  padding: 10px 40px;
+  border: 1px solid #0c0c0e;
+}
+
+.small-button-profile {
+  font-size: 1rem;
+  color: #0c0c0e;
+  padding: 10px 20px;
+  border: 1px solid #0c0c0e;
+}
+
 .container {
   max-width: 1440px;
   margin: auto;
