@@ -12,17 +12,20 @@ h1 {
   color: $color-header-footer;
   @extend %font-add;
   @include font(3rem, normal, 400, 5rem, 0.6px, capitalize);
-}
-
-h1:hover {
-  color: $color-additional;
-  cursor: pointer;
-  transition: all 0.3s;
+  &:hover {
+    color: $color-additional;
+    cursor: pointer;
+    @extend %transition;
+  }
 }
 
 h2 {
+  color: $color-primary;
   @extend %font-add;
   @include font(4rem, normal, 400, 4rem, 2px, capitalize);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 h3 {

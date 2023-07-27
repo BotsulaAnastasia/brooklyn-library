@@ -6,3 +6,19 @@
   letter-spacing: $spacing;
   text-transform: $transform;
 }
+
+@mixin line($width, $height, $background, $border) {
+  width: $width;
+  height: $height;
+  background: $background;
+  border: $border;
+}
+
+@mixin columns($width) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  > * {
+    flex-basis: $width;
+  }
+}

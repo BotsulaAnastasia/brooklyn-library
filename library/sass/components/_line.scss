@@ -1,0 +1,4 @@
+.underline-title {
+  @include line(5rem, 0.1rem, $color-primary, 0);
+  margin-bottom: 40px;
+}

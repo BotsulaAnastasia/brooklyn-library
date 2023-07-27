@@ -38,9 +38,7 @@
 
 .nav-link {
   color: $color-header-footer;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 5rem;
+  @include font(2rem, normal, 400, 5rem, normal, none);
   text-decoration: none;
   display: inline-block;
   position: relative;
