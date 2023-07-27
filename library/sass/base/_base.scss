@@ -9,11 +9,8 @@ body {
 
 h1 {
   color: $color-header-footer;
-  font-family: Forum;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 50px;
-  letter-spacing: 0.6px;
+  @extend %font-add;
+  @include font(3rem, normal, 400, 5rem, 0.6px, capitalize);
 }
 
 h1:hover {
@@ -23,30 +20,15 @@ h1:hover {
 }
 
 h2 {
-  font-family: Forum;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 2px;
-  text-transform: capitalize;
+  @extend %font-add;
+  @include font(4rem, normal, 400, 4rem, 2px, capitalize);
 }
 
 h3 {
-  font-family: Forum;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 2px;
-  text-transform: capitalize;
+  @extend %font-add;
+  @include font(4rem, normal, 400, 4rem, 2px, capitalize);
 }
 
 h4 {
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  @include font(1.5rem, normal, 700, 4rem, 2px, uppercase);
 }

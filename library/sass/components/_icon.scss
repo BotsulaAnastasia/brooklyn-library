@@ -1,3 +1,7 @@
+.icon-profile-path {
+  @extend %transition;
+}
+
 .icon-profile-svg:hover {
   .icon-profile-path {
     fill: $color-additional;
