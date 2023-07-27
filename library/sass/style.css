@@ -1,4 +1,4 @@
-.icon-profile-path {
+.icon-profile-path, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -66,36 +66,30 @@ h4 {
   letter-spacing: 0.1rem;
   border-radius: 2px;
   cursor: pointer;
-  transition: all 0.3s;
 }
-
-.small-button-buy {
+.button--buy {
   font-size: 1rem;
   color: #0c0c0e;
   padding: 9px 27px;
   border: 1px solid #0c0c0e;
 }
-
-.small-button-buy:hover {
+.button--buy:hover {
   border: 1px solid #bb945f;
   background: #bb945f;
 }
-
-.small-button-brown {
+.button--own {
   font-size: 1rem;
   color: #bb945f;
   padding: 9px 25px;
   border: 1px solid #bb945f;
 }
-
-.big-button-black {
+.button--big {
   font-size: 2rem;
   color: #0c0c0e;
   padding: 10px 40px;
   border: 1px solid #0c0c0e;
 }
-
-.small-button-profile {
+.button--profile {
   font-size: 1rem;
   color: #0c0c0e;
   padding: 10px 20px;
@@ -138,11 +132,9 @@ h4 {
   list-style: none;
   padding: 0 15px;
 }
-
 .menu-link:first-child {
   padding-left: 0;
 }
-
 .menu-link:last-child {
   padding-right: 0;
 }
@@ -157,7 +149,6 @@ h4 {
   position: relative;
   transition: all 0.4s ease;
 }
-
 .nav-link::after {
   content: "";
   position: absolute;
@@ -169,11 +160,9 @@ h4 {
   transform: translateX(-50%);
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
-
 .nav-link:hover {
   color: #bb945f;
 }
-
 .nav-link:hover::after {
   width: 100%;
 }

@@ -6,38 +6,33 @@
   letter-spacing: 0.1rem;
   border-radius: 2px;
   cursor: pointer;
-  transition: all 0.3s;
-}
-
-.small-button-buy {
-  font-size: 1rem;
-  color: $color-primary;
-  padding: 9px 27px;
-  border: 1px solid $color-primary;
-}
-
-.small-button-buy:hover {
-  border: 1px solid $color-additional;
-  background: $color-additional;
-}
-
-.small-button-brown {
-  font-size: 1rem;
-  color: $color-additional;
-  padding: 9px 25px;
-  border: 1px solid $color-additional;
-}
-
-.big-button-black {
-  font-size: 2rem;
-  color: $color-primary;
-  padding: 10px 40px;
-  border: 1px solid $color-primary;
-}
-
-.small-button-profile {
-  font-size: 1rem;
-  color: $color-primary;
-  padding: 10px 20px;
-  border: 1px solid $color-primary;
+  @extend %transition;
+  &--buy {
+    font-size: 1rem;
+    color: $color-primary;
+    padding: 9px 27px;
+    border: 1px solid $color-primary;
+    &:hover {
+      border: 1px solid $color-additional;
+      background: $color-additional;
+    }
+  }
+  &--own {
+    font-size: 1rem;
+    color: $color-additional;
+    padding: 9px 25px;
+    border: 1px solid $color-additional;
+  }
+  &--big {
+    font-size: 2rem;
+    color: $color-primary;
+    padding: 10px 40px;
+    border: 1px solid $color-primary;
+  }
+  &--profile {
+    font-size: 1rem;
+    color: $color-primary;
+    padding: 10px 20px;
+    border: 1px solid $color-primary;
+  }
 }

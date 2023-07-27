@@ -28,14 +28,12 @@
 .menu-link {
   list-style: none;
   padding: 0 15px;
-}
-
-.menu-link:first-child {
-  padding-left: 0;
-}
-
-.menu-link:last-child {
-  padding-right: 0;
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
 .nav-link {
@@ -47,25 +45,23 @@
   display: inline-block;
   position: relative;
   transition: all 0.4s ease;
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  background-color: $color-additional;
-  width: 0;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-}
-
-.nav-link:hover {
-  color: $color-additional;
-}
-.nav-link:hover::after {
-  width: 100%;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $color-additional;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  }
+  &:hover {
+    color: $color-additional;
+  }
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 .icon-profile {
