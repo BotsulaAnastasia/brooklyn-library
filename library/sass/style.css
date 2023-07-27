@@ -8,6 +8,7 @@ h3, h2, h1 {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
