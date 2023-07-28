@@ -1,6 +1,9 @@
+.favorites-container {
+  padding: 20px 60px 0px 20px;
+}
+
 .subtitle-favorites {
   @include font(2rem, normal, 700, normal, normal, none);
-  margin-left: 20px;
 }
 
 .seasons {
@@ -9,7 +12,8 @@
   height: 24px;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 720px 40px 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .season-text {

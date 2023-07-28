@@ -29,8 +29,11 @@ h2 {
 }
 
 h3 {
+  color: $color-additional;
   @extend %font-add;
   @include font(4rem, normal, 400, 4rem, 2px, capitalize);
+  margin-top: 40;
+  margin-bottom: 0;
 }
 
 h4 {

@@ -2,7 +2,7 @@
   transition: all 0.3s ease-out;
 }
 
-.block-heading, .welcome-text, h3, h2, h1 {
+.menu-price-tag, .block-heading, .welcome-text, h3, h2, h1 {
   font-family: "Forum", Arial, sans-serif;
 }
 
@@ -44,12 +44,15 @@ h2 {
 }
 
 h3 {
+  color: #bb945f;
   font-size: 4rem;
   font-style: normal;
   font-weight: 400;
   line-height: 4rem;
   letter-spacing: 2px;
   text-transform: capitalize;
+  margin-top: 40;
+  margin-bottom: 0;
 }
 
 h4 {
@@ -106,6 +109,7 @@ h4 {
 
 .container {
   max-width: 1440px;
+  box-sizing: border-box;
   margin: auto;
 }
 
@@ -186,8 +190,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px;
 }
 .layout-3-column > * {
   flex-basis: 31%;
@@ -197,8 +200,6 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 .layout-2-column > * {
   flex-basis: 41%;
@@ -253,6 +254,14 @@ h4 {
   margin-left: 0px;
 }
 
+.shop-menu-stripe {
+  width: 10rem;
+  height: 0.1rem;
+  background: #bb945f;
+  border: 0;
+  margin: 0;
+}
+
 .description {
   text-align: center;
   font-size: 2rem;
@@ -261,7 +270,7 @@ h4 {
   line-height: 4rem;
   letter-spacing: normal;
   text-transform: none;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .carousel {
@@ -293,6 +302,10 @@ h4 {
   background: #bb945f;
 }
 
+.favorites-container {
+  padding: 20px 60px 0px 20px;
+}
+
 .subtitle-favorites {
   font-size: 2rem;
   font-style: normal;
@@ -300,7 +313,6 @@ h4 {
   line-height: normal;
   letter-spacing: normal;
   text-transform: none;
-  margin-left: 20px;
 }
 
 .seasons {
@@ -309,7 +321,8 @@ h4 {
   height: 24px;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 720px 40px 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .season-text {
@@ -413,4 +426,35 @@ h4 {
   right: -40px;
   bottom: 0;
   left: 390px;
+}
+
+.cshop-container {
+  padding: 20px 20px 40px;
+}
+
+.drink-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 438px;
+  height: 520px;
+}
+
+.drink-menu-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-menu-content {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.menu-position {
+  width: 200px;
 }/*# sourceMappingURL=style.css.map */
