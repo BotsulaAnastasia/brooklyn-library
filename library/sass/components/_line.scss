@@ -2,3 +2,9 @@
   @include line(5rem, 0.1rem, $color-primary, 0);
   margin-bottom: 40px;
 }
+
+.underline-block-heading {
+  @include line(6rem, 0.1rem, $color-additional, 0);
+  margin-top: -1px;
+  margin-left: 0px;
+}

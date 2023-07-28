@@ -2,7 +2,7 @@
   transition: all 0.3s ease-out;
 }
 
-.welcome-text, h3, h2, h1 {
+.block-heading, .welcome-text, h3, h2, h1 {
   font-family: "Forum", Arial, sans-serif;
 }
 
@@ -71,20 +71,24 @@ h4 {
   cursor: pointer;
 }
 .button--buy {
+  position: absolute;
   font-size: 1rem;
   color: #0c0c0e;
-  padding: 9px 27px;
   border: 1px solid #0c0c0e;
+  padding: 9px 27px;
+  bottom: 15px;
 }
 .button--buy:hover {
   border: 1px solid #bb945f;
   background: #bb945f;
 }
 .button--own {
+  position: absolute;
   font-size: 1rem;
   color: #bb945f;
   padding: 9px 25px;
   border: 1px solid #bb945f;
+  bottom: 15px;
   cursor: default;
 }
 .button--big {
@@ -189,6 +193,17 @@ h4 {
   flex-basis: 31%;
 }
 
+.layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.layout-2-column > * {
+  flex-basis: 41%;
+}
+
 .welcome-container {
   display: flex;
   background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%), url("../img/welcome/welcome_bg.jpg"), lightgray 50%/cover no-repeat;
@@ -227,6 +242,15 @@ h4 {
   background: #0c0c0e;
   border: 0;
   margin-bottom: 40px;
+}
+
+.underline-block-heading {
+  width: 6rem;
+  height: 0.1rem;
+  background: #bb945f;
+  border: 0;
+  margin-top: -1px;
+  margin-left: 0px;
 }
 
 .description {
@@ -344,4 +368,49 @@ h4 {
 
 .real-radio:checked + .custom-radio::before {
   transform: translate(-50%, -50%) scale(1);
+}
+
+.block-favorite {
+  position: relative;
+  width: 550px;
+  height: 555px;
+  border: 1px solid #000;
+  background: #fff;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-top: 15px;
+  margin: 0 0 40px 0;
+}
+
+.block-heading {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.block-capitalize-title {
+  text-transform: capitalize;
+}
+
+.block-favorite-content {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  width: 355px;
+  margin: 0;
+}
+
+.book-img {
+  position: absolute;
+  top: 254px;
+  right: -40px;
+  bottom: 0;
+  left: 390px;
 }/*# sourceMappingURL=style.css.map */
