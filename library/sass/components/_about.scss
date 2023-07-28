@@ -3,3 +3,32 @@
   @include font(2rem, normal, 400, 4rem, normal, none);
   margin-bottom: 20px;
 }
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.pagination-button {
+  background: none;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.pagination--colour {
+  width: 16px;
+  height: 16px;
+  background: $color-primary;
+  border-radius: 50%;
+}
+
+.active {
+  background: $color-additional;
+}

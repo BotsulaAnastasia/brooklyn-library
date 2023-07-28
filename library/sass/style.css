@@ -237,4 +237,33 @@ h4 {
   letter-spacing: normal;
   text-transform: none;
   margin-bottom: 20px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.pagination-button {
+  background: none;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.pagination--colour {
+  width: 16px;
+  height: 16px;
+  background: #0c0c0e;
+  border-radius: 50%;
+}
+
+.active {
+  background: #bb945f;
 }/*# sourceMappingURL=style.css.map */
