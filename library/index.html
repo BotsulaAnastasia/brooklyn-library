@@ -80,29 +80,52 @@
         <div class="container">
           <h2>Favorites</h2>
           <hr class="underline-title" />
-          <span class="bold-subtitle subtitle-favorites"
-            >Pick favorites of season</span
-          >
+          <span class="subtitle-favorites">Pick favorites of season</span>
           <div class="seasons">
-            <div class="winter">
-              <a href="#" class="var-favorites-link var--active">
-                <span class="ico ico--var"></span>Winter
-              </a>
+            <div class="seasons-var">
+              <input
+                type="radio"
+                name="favorite-season"
+                value="winter"
+                id="winter"
+                class="real-radio"
+              /><span class="custom-radio"></span>
+              <label for="winter" class="season-text season-text--bold"
+                >Winter</label
+              >
             </div>
-            <div class="spring">
-              <a href="#" class="var-favorites-link var--active">
-                <span class="ico ico--var"></span>Spring
-              </a>
+            <div class="seasons-var">
+              <input
+                type="radio"
+                name="favorite-season"
+                value="spring"
+                id="spring"
+                class="real-radio"
+              />
+              <span class="custom-radio"></span>
+              <label for="spring" class="season-text">Spring</label>
             </div>
-            <div class="summer">
-              <a href="#" class="var-favorites-link var--active">
-                <span class="ico ico--var"></span>Summer
-              </a>
+            <div class="seasons-var">
+              <input
+                type="radio"
+                name="favorite-season"
+                value="spring"
+                id="summer"
+                class="real-radio"
+              />
+              <span class="custom-radio"></span>
+              <label for="summer" class="season-text">Summer</label>
             </div>
-            <div class="autumn">
-              <a href="#" class="var-favorites-link var--active">
-                <span class="ico ico--var"></span>Autumn
-              </a>
+            <div class="seasons-var">
+              <input
+                type="radio"
+                name="favorite-season"
+                value="spring"
+                id="autumn"
+                class="real-radio"
+              />
+              <span class="custom-radio"></span>
+              <label for="autumn" class="season-text">Autumn</label>
             </div>
           </div>
           <div class="layout-2-column">
@@ -177,7 +200,7 @@
                 her family) exploring how the Windsors have evolved and thrived
                 as the modern world has changed around them.
               </p>
-              <button class="button button--own">Own</button>
+              <button class="button button--own" disabled>Own</button>
               <img
                 src="img/favorites/winter/book_4.jpg"
                 alt="The Last Queen By Clive Irving"
