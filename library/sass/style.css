@@ -216,6 +216,100 @@ h4 {
   flex-basis: 41%;
 }
 
+.footer {
+  background: #0c0c0e;
+  color: #ffffff;
+}
+
+.footer-container {
+  padding: 20px 20px 44px;
+}
+
+.footer-contact-info {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.location-schedule {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.location-schedule--link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.location-schedule--link:hover {
+  color: #9c9c9c;
+}
+.location-schedule--right {
+  text-align: right;
+}
+
+.smedia-schedule {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.smedia-link {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.smedia-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.smedia-icons {
+  list-style: none;
+  display: flex;
+  width: 102px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+.smedia-icons > * {
+  width: 24px;
+  height: 24px;
+}
+
+.smedia-schedule-text {
+  text-align: right;
+}
+
+.footer-rss {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 2px;
+  text-transform: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-rss-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-rss-link:hover {
+  color: #9c9c9c;
+}
+
 .welcome-container {
   display: flex;
   background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%), url("../img/welcome/welcome_bg.jpg"), lightgray 50%/cover no-repeat;
@@ -271,6 +365,15 @@ h4 {
   background: #bb945f;
   border: 0;
   margin: 0;
+}
+
+.footer-line {
+  width: 140rem;
+  height: 0.1rem;
+  background: #ffffff;
+  border: 0;
+  margin-top: 30px;
+  margin-bottom: 44px;
 }
 
 .description {

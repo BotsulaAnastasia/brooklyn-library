@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brooklyn Public Library</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -374,32 +378,38 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <div class="footer-contact-info">
           <div class="location-schedule">
-            <span>286 Cadman Plaza, New York, NY 11238, United States</span>
-            <span>Mon - Fri 08:00 am - 07:00 pm</span>
+            <span><a href="#" class="location-schedule--link">286 Cadman Plaza, New York, <br>NY 11238, United States</a> </span>
+            <span class="location-schedule--right">Mon - Fri <br>08:00 am - 07:00 pm</span>
           </div>
           <div class="smedia-schedule">
-            <div class="smedia">
-              <a href="#">
-                <span class="ico ico--media"></span>
-              </a>
-              <a href="#">
-                <span class="ico ico--media"></span>
-              </a>
-              <a href="#">
-                <span class="ico ico--media"></span>
-              </a>
-            </div>
-            <span>Sat - Sun 10:00 am - 06:00 pm</span>
+            <ul class="smedia-icons">
+              <li>
+                <a href="#" class="smedia-link">
+                  <object data="./img/icon_twitter.svg" type="image/svg+xml"></object>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="smedia-link">
+                  <object data="./img/icon_instagram.svg" type="image/svg+xml"></object>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="smedia-link">
+                  <object data="./img/icon_facebook.svg" type="image/svg+xml"></object>
+                </a> 
+              </li>
+            </ul>                         
+            <span class="smedia-schedule-text">Sat - Sun <br>10:00 am - 06:00 pm</span>
           </div>
         </div>
         <hr class="footer-line" />
         <div class="footer-rss">
           <span>2023</span>
-          <span>The Rolling Scopes School</span>
-          <span>Username</span>
+          <span><a href="https://rs.school/js-stage0/" class="footer-rss-link">The Rolling Scopes School</a></span>
+          <span><a href="https://github.com/BotsulaAnastasia" class="footer-rss-link">Anastasia Goncharenko</a></span>
         </div>
       </div>
     </footer>
