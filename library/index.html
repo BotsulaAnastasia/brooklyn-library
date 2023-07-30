@@ -337,35 +337,37 @@
         </div>
       </section>
       <section class="library-card" id="card">
-        <div class="container">
+        <div class="container library-card-container">
           <h2>Digital Library Cards</h2>
           <hr class="underline-title" />
-          <div class="find-card">
-            <p class="find-card-title">Find your Library card</p>
-            <div class="card-form">
-              <form action method="post">
-                <div class="bg-form">
-                  <p>Brooklyn Public Library</p>
-                  <input type="text" name="name" placeholder="Reader's name" />
-                  <input type="text" name="number" placeholder="Card number" />
-                </div>
-                <div class="card-form-button">
-                  <button type="submit" class="button button--big">
-                    Check the card
-                  </button>
-                </div>
-              </form>
+          <div class="library-card-content">
+            <div class="find-card">
+              <p class="find-card-title">Find your Library card</p>
+              <div class="card-form">
+                <form action method="post">
+                  <div class="bg-form">
+                    <p class="bg-form-title">Brooklyn Public Library</p>
+                    <input class="card-form-input" type="text" name="name" placeholder="Reader's name" />
+                    <input class="card-form-input" type="text" name="number" placeholder="Card number" />
+                  </div>
+                  <div class="card-form-button">
+                    <button type="submit" class="button button--big">
+                      Check the card
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
-          </div>
-          <div class="get-card">
-            <p class="get-card-title">Get a reader card</p>
-            <p>
-              You will be able to see a reader card after logging into account
-              or you can register a new account
-            </p>
-            <div class="get-card-button">
-              <button class="button button--profile">Sign Up</button>
-              <button class="button button--profile">Log in</button>
+            <div class="get-card">
+              <p class="get-card-title">Get a reader card</p>
+              <p class="get-card-text">
+                You will be able to see a reader card after logging into account
+                or you can register a new account
+              </p>
+              <div class="get-card-button">
+                <button class="button button--profile">Sign Up</button>
+                <button class="button button--profile">Log in</button>
+              </div>
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@
   transition: all 0.3s ease-out;
 }
 
-.menu-price-tag, .block-heading, .welcome-text, h3, h2, h1 {
+.get-card-title, .card-form-input, .bg-form-title, .menu-price-tag, .block-heading, .welcome-text, h3, h2, h1 {
   font-family: "Forum", Arial, sans-serif;
 }
 
@@ -99,12 +99,23 @@ h4 {
   color: #0c0c0e;
   padding: 10px 40px;
   border: 1px solid #0c0c0e;
+  margin: 0 auto;
+  display: block;
+}
+.button--big:hover {
+  border: 1px solid #bb945f;
+  background: #bb945f;
 }
 .button--profile {
   font-size: 1rem;
   color: #0c0c0e;
   padding: 10px 20px;
   border: 1px solid #0c0c0e;
+  margin-left: 20px;
+}
+.button--profile:hover {
+  border: 1px solid #bb945f;
+  background: #bb945f;
 }
 
 .container {
@@ -523,4 +534,106 @@ h4 {
 }
 .contact-link:hover {
   color: #bb945f;
+}
+
+.library-card-container {
+  padding: 20px 20px 41px;
+}
+
+.library-card-content {
+  display: flex;
+}
+
+.find-card-title {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: none;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-form {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 386px;
+  border: 3px solid #bb945f;
+  background: #FFF;
+}
+
+.bg-form {
+  width: 560px;
+  height: 272px;
+  background: #bb945f;
+  box-sizing: border-box;
+  padding: 20px 20px 0;
+  margin: 20px;
+}
+
+.bg-form-title {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 0.6px;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.card-form-input {
+  width: 520px;
+  height: 66px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 10px;
+  background: #FFF;
+  margin-bottom: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  color: #8E8E8E;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 0.6px;
+  text-transform: none;
+}
+
+.get-card {
+  margin: 0 0 0 auto;
+  width: 456px;
+}
+
+.get-card-title {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: none;
+  text-align: right;
+  margin: 40px 0 0;
+}
+
+.get-card-text {
+  width: 456px;
+  text-align: right;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0.4px;
+  text-transform: none;
+  margin: 35px 0;
+}
+
+.get-card-button {
+  display: flex;
+  justify-content: flex-end;
 }/*# sourceMappingURL=style.css.map */
