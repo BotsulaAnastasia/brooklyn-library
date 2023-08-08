@@ -15,15 +15,7 @@
   box-sizing: border-box;
   padding: 35px 40px;
   margin: 220px 840px 160px 0;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-shrink: 0;
   background: $color-primary;
-}
-
-.welcome-text {
-  color: $color-header-footer;
-  @extend %font-add;
-  @include font(4rem, normal, 400, 5rem, 3px, uppercase);
-  margin: 0;
 }

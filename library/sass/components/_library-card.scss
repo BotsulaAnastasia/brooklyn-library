@@ -1,81 +1,82 @@
 .library-card-container {
-    padding: 20px 20px 41px;
+  padding: 0px 20px 41px;
 }
 
 .library-card-content {
-    display: flex;
+  display: flex;
 }
 
 .find-card-title {
-    @include font(3rem, normal, 400, normal, 0.6px, none);
-    font-size: 30px;
-    text-align: center;
+  @include font(3rem, normal, 400, normal, 0.6px, none);
+  font-size: 30px;
+  text-align: center;
+  margin: 0 0 30px 0;
 }
 
 .card-form {
-    display: flex;
-    justify-content: center;
-    width: 600px;
-    height: 386px;
-    border: 3px solid $color-additional;
-    background: #FFF;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 600px;
+  height: 386px;
+  border: 3px solid $color-additional;
+  background: #fff;
 }
 
 .bg-form {
-    width: 560px;
-    height: 272px;
-    background: $color-additional;
-    box-sizing: border-box;
-    padding: 20px 20px 0;
-    margin: 20px;
+  width: 560px;
+  height: 272px;
+  background: $color-additional;
+  box-sizing: border-box;
+  padding: 20px 20px 0;
+  margin: 17px 17px 20px;
 }
 
 .bg-form-title {
-    @extend %font-add;
-    @include font(3rem, normal, 400, 5rem, 0.6px, none);
-    margin-top: 0;
-    margin-bottom: 20px;
+  @extend %font-add;
+  @include font(3rem, normal, 400, 5rem, 0.6px, none);
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .card-form-input {
-    width: 520px;
-    height: 66px;
-    flex-shrink: 0;
-    box-sizing: border-box;
-    border: 0;
-    border-radius: 10px;
-    background: #FFF;
-    margin-bottom: 25px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 20px;
+  width: 520px;
+  height: 66px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
 
-    color: $color-gray;
-    @extend %font-add;
-    @include font(3rem, normal, 400, 5rem, 0.6px, none);
-
+  color: $color-gray;
+  @extend %font-add;
+  @include font(3rem, normal, 400, 5rem, 0.6px, none);
 }
 
 .get-card {
-    margin: 0 0 0 auto;
-    width: 456px;
+  margin: 0 0 0 auto;
+  width: 456px;
 }
 
 .get-card-title {
-    @extend %font-add;
-    @include font(3rem, normal, 400, normal, 0.6px, none);
-    text-align: right;
-    margin: 40px 0 0;
+  @extend %font-add;
+  @include font(3rem, normal, 400, normal, 0.6px, none);
+  text-align: right;
+  margin: 0;
 }
 
 .get-card-text {
-    width: 456px;
-    text-align: right;
-    @include font(2rem, normal, 400, 4rem, 0.4px, none);
-    margin: 35px 0;
+  width: 456px;
+  text-align: right;
+  @include font(2rem, normal, 400, 4rem, 0.4px, none);
+  margin: 35px 0;
 }
 
 .get-card-button {
-   display: flex;
-   justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }

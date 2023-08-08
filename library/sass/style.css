@@ -2,7 +2,7 @@
   transition: all 0.3s ease-out;
 }
 
-.get-card-title, .card-form-input, .bg-form-title, .menu-price-tag, .block-heading, .welcome-text, h3, h2, h1 {
+.get-card-title, .card-form-input, .bg-form-title, .menu-price-tag, .block-heading, h5, h3, h2, h1 {
   font-family: "Forum", Arial, sans-serif;
 }
 
@@ -14,6 +14,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Inter", Verdana, sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -38,8 +39,7 @@ h2 {
   line-height: 4rem;
   letter-spacing: 2px;
   text-transform: capitalize;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   text-align: center;
 }
 
@@ -64,6 +64,18 @@ h4 {
   text-transform: uppercase;
 }
 
+h5 {
+  color: #ffffff;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
 .button {
   font-family: "Inter", Verdana, sans-serif;
   font-style: normal;
@@ -71,6 +83,7 @@ h4 {
   line-height: normal;
   letter-spacing: 0.1rem;
   border-radius: 2px;
+  background: #fff;
   cursor: pointer;
 }
 .button--buy {
@@ -78,7 +91,7 @@ h4 {
   font-size: 1rem;
   color: #0c0c0e;
   border: 1px solid #0c0c0e;
-  padding: 9px 27px;
+  padding: 8px 26px;
   bottom: 15px;
 }
 .button--buy:hover {
@@ -89,7 +102,7 @@ h4 {
   position: absolute;
   font-size: 1rem;
   color: #bb945f;
-  padding: 9px 25px;
+  padding: 8px 24px;
   border: 1px solid #bb945f;
   bottom: 15px;
   cursor: default;
@@ -97,7 +110,7 @@ h4 {
 .button--big {
   font-size: 2rem;
   color: #0c0c0e;
-  padding: 10px 40px;
+  padding: 9px 39px;
   border: 1px solid #0c0c0e;
   margin: 0 auto;
   display: block;
@@ -107,9 +120,11 @@ h4 {
   background: #bb945f;
 }
 .button--profile {
+  width: 75px;
+  text-align: center;
   font-size: 1rem;
   color: #0c0c0e;
-  padding: 10px 20px;
+  padding: 9px 0;
   border: 1px solid #0c0c0e;
   margin-left: 20px;
 }
@@ -124,15 +139,12 @@ h4 {
   margin: auto;
 }
 
-.header {
-  background: #0c0c0e;
-}
-
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
+  background: #0c0c0e;
 }
 
 .logo {
@@ -154,6 +166,7 @@ h4 {
 .menu-link {
   list-style: none;
   padding: 0 15px;
+  flex-shrink: 0;
 }
 .menu-link:first-child {
   padding-left: 0;
@@ -213,16 +226,16 @@ h4 {
   justify-content: space-between;
 }
 .layout-2-column > * {
-  flex-basis: 41%;
+  flex-basis: 40%;
 }
 
 .footer {
-  background: #0c0c0e;
   color: #ffffff;
 }
 
 .footer-container {
   padding: 20px 20px 44px;
+  background: #0c0c0e;
 }
 
 .footer-contact-info {
@@ -321,21 +334,9 @@ h4 {
   box-sizing: border-box;
   padding: 35px 40px;
   margin: 220px 840px 160px 0;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-shrink: 0;
   background: #0c0c0e;
-}
-
-.welcome-text {
-  color: #ffffff;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 5rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin: 0;
 }
 
 .icon-profile-svg:hover .icon-profile-path {
@@ -355,8 +356,7 @@ h4 {
   height: 0.1rem;
   background: #bb945f;
   border: 0;
-  margin-top: -1px;
-  margin-left: 0px;
+  margin: -1px 0 0 0;
 }
 
 .shop-menu-stripe {
@@ -391,8 +391,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 35px 0 55px;
 }
 
 .pagination-button {
@@ -417,7 +416,7 @@ h4 {
 }
 
 .favorites-container {
-  padding: 20px 60px 0px 20px;
+  padding: 0 60px 0 20px;
 }
 
 .subtitle-favorites {
@@ -476,7 +475,7 @@ h4 {
   border: 2px solid black;
   border-radius: 50%;
   vertical-align: text-top;
-  margin-right: 20px;
+  margin-right: 15px;
   cursor: pointer;
 }
 
@@ -504,8 +503,7 @@ h4 {
   border: 1px solid #000;
   background: #fff;
   box-sizing: border-box;
-  padding-left: 20px;
-  padding-top: 15px;
+  padding: 14px 0 0 19px;
   margin: 0 0 40px 0;
 }
 
@@ -517,6 +515,7 @@ h4 {
   letter-spacing: 2px;
   text-transform: capitalize;
   margin: 0;
+  width: 530px;
 }
 
 .block-capitalize-title {
@@ -530,20 +529,22 @@ h4 {
   line-height: 4rem;
   letter-spacing: 2px;
   text-transform: capitalize;
-  width: 355px;
+  padding-right: 174px;
   margin: 0;
 }
 
 .book-img {
   position: absolute;
-  top: 254px;
   right: -40px;
-  bottom: 0;
-  left: 390px;
+  bottom: -1px;
 }
 
 .cshop-container {
-  padding: 20px 20px 40px;
+  padding: 0 20px 40px;
+}
+
+.description--cshop {
+  letter-spacing: 2px;
 }
 
 .cshop-menu {
@@ -598,7 +599,7 @@ h4 {
 }
 
 .contacts-container {
-  padding: 20px 20px 40px;
+  padding: 0 20px 40px;
 }
 
 .contacts-info {
@@ -640,7 +641,7 @@ h4 {
 }
 
 .library-card-container {
-  padding: 20px 20px 41px;
+  padding: 0px 20px 41px;
 }
 
 .library-card-content {
@@ -656,15 +657,17 @@ h4 {
   text-transform: none;
   font-size: 30px;
   text-align: center;
+  margin: 0 0 30px 0;
 }
 
 .card-form {
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
   width: 600px;
   height: 386px;
   border: 3px solid #bb945f;
-  background: #FFF;
+  background: #fff;
 }
 
 .bg-form {
@@ -673,7 +676,7 @@ h4 {
   background: #bb945f;
   box-sizing: border-box;
   padding: 20px 20px 0;
-  margin: 20px;
+  margin: 17px 17px 20px;
 }
 
 .bg-form-title {
@@ -694,7 +697,7 @@ h4 {
   box-sizing: border-box;
   border: 0;
   border-radius: 10px;
-  background: #FFF;
+  background: #fff;
   margin-bottom: 25px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -721,7 +724,7 @@ h4 {
   letter-spacing: 0.6px;
   text-transform: none;
   text-align: right;
-  margin: 40px 0 0;
+  margin: 0;
 }
 
 .get-card-text {

@@ -1,12 +1,9 @@
-.header {
-  background: $color-primary;
-}
-
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
+  background: $color-primary;
 }
 
 .logo {
@@ -28,6 +25,7 @@
 .menu-link {
   list-style: none;
   padding: 0 15px;
+  flex-shrink: 0;
   &:first-child {
     padding-left: 0;
   }

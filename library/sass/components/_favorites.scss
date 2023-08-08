@@ -1,5 +1,5 @@
 .favorites-container {
-  padding: 20px 60px 0px 20px;
+  padding: 0 60px 0 20px;
 }
 
 .subtitle-favorites {
@@ -48,7 +48,7 @@
   border: 2px solid black;
   border-radius: 50%;
   vertical-align: text-top;
-  margin-right: 20px;
+  margin-right: 15px;
   cursor: pointer;
 }
 
@@ -77,8 +77,7 @@
   border: 1px solid #000;
   background: #fff;
   box-sizing: border-box;
-  padding-left: 20px;
-  padding-top: 15px;
+  padding: 14px 0 0 19px;
   margin: 0 0 40px 0;
 }
 
@@ -86,6 +85,7 @@
   @extend %font-add;
   @include font(2rem, normal, 400, 4rem, 2px, capitalize);
   margin: 0;
+  width: 530px;
 }
 
 .block-capitalize-title {
@@ -94,14 +94,12 @@
 
 .block-favorite-content {
   @include font(1.5rem, normal, 400, 4rem, 2px, capitalize);
-  width: 355px;
+  padding-right: 174px;
   margin: 0;
 }
 
 .book-img {
   position: absolute;
-  top: 254px;
   right: -40px;
-  bottom: 0;
-  left: 390px;
+  bottom: -1px;
 }

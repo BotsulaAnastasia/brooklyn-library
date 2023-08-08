@@ -5,6 +5,7 @@
   line-height: normal;
   letter-spacing: 0.1rem;
   border-radius: 2px;
+  background: #fff;
   cursor: pointer;
   @extend %transition;
   &--buy {
@@ -12,7 +13,7 @@
     font-size: 1rem;
     color: $color-primary;
     border: 1px solid $color-primary;
-    padding: 9px 27px;
+    padding: 8px 26px;
     bottom: 15px;
     &:hover {
       border: 1px solid $color-additional;
@@ -23,7 +24,7 @@
     position: absolute;
     font-size: 1rem;
     color: $color-additional;
-    padding: 9px 25px;
+    padding: 8px 24px;
     border: 1px solid $color-additional;
     bottom: 15px;
     cursor: default;
@@ -31,7 +32,7 @@
   &--big {
     font-size: 2rem;
     color: $color-primary;
-    padding: 10px 40px;
+    padding: 9px 39px;
     border: 1px solid $color-primary;
     margin: 0 auto;
     display: block;
@@ -41,9 +42,11 @@
     }
   }
   &--profile {
+    width: 75px;
+    text-align: center;
     font-size: 1rem;
     color: $color-primary;
-    padding: 10px 20px;
+    padding: 9px 0;
     border: 1px solid $color-primary;
     margin-left: 20px;
     &:hover {

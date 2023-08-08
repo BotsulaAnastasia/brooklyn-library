@@ -6,6 +6,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Inter", Verdana, sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -23,8 +24,7 @@ h2 {
   color: $color-primary;
   @extend %font-add;
   @include font(4rem, normal, 400, 4rem, 2px, capitalize);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   text-align: center;
 }
 
@@ -38,4 +38,12 @@ h3 {
 
 h4 {
   @include font(1.5rem, normal, 700, 4rem, 2px, uppercase);
+}
+
+h5 {
+  color: $color-header-footer;
+  @extend %font-add;
+  @include font(4rem, normal, 400, 5rem, 3px, uppercase);
+  text-align: center;
+  margin: 0;
 }
