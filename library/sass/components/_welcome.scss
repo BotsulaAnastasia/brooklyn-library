@@ -6,7 +6,8 @@
       #0c0c0e 0.01%,
       rgba(18, 18, 21, 0.1) 100%
     ),
-    url("../img/welcome/welcome_bg.jpg"), lightgray 50% / cover no-repeat;
+    url("../img/welcome/welcome.jpg"), lightgray 50% / cover no-repeat;
+    background-size: cover;
 }
 
 .welcome-content {
@@ -18,4 +19,5 @@
   justify-content: center;
   align-items: center;
   background: $color-primary;
+  flex-shrink: 0;
 }

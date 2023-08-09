@@ -133,6 +133,41 @@ h5 {
   background: #bb945f;
 }
 
+.burger-line, .burger:after, .burger:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background: #FFF;
+  width: 100%;
+  height: 2px;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  width: 45px;
+  height: 22px;
+  margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .burger {
+    display: inline-block;
+  }
+}
+.burger:before {
+  top: 0;
+  right: 0;
+}
+.burger:after {
+  bottom: 0;
+  right: 0;
+}
+
+.burger-line {
+  top: calc(50% - 1px);
+  right: 0;
+}
+
 .container {
   max-width: 1440px;
   box-sizing: border-box;
@@ -154,8 +189,12 @@ h5 {
 
 .header-navigation {
   position: absolute;
-  left: 768px;
   right: 88px;
+}
+@media (max-width: 768px) {
+  .header-navigation {
+    display: none;
+  }
 }
 
 .menu {
@@ -207,7 +246,17 @@ h5 {
 }
 
 .icon-profile {
+  width: 28px;
+  height: 28px;
   margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .icon-profile {
+    position: absolute;
+    top: 50%;
+    margin-top: -14px;
+    right: 85px;
+  }
 }
 
 .layout-3-column {
@@ -325,7 +374,8 @@ h5 {
 
 .welcome-container {
   display: flex;
-  background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%), url("../img/welcome/welcome_bg.jpg"), lightgray 50%/cover no-repeat;
+  background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%), url("../img/welcome/welcome.jpg"), lightgray 50%/cover no-repeat;
+  background-size: cover;
 }
 
 .welcome-content {
@@ -337,6 +387,7 @@ h5 {
   justify-content: center;
   align-items: center;
   background: #0c0c0e;
+  flex-shrink: 0;
 }
 
 .icon-profile-svg:hover .icon-profile-path {
