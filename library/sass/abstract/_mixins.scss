@@ -31,8 +31,8 @@
   @media (max-width: $tablet-width) { @content; }
 }
 
-@mixin media-mobile {
-  @media (max-width: $mobile-big-width) { @content; }
+@mixin media-transition {
+  @media (max-width: $transition-width) { @content; }
 }
 
 @mixin media-mobilesmall {
