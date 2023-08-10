@@ -373,8 +373,13 @@ h5 {
 
 .welcome-container {
   display: flex;
-  background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%), url("../img/welcome/welcome.jpg"), lightgray 50%/cover no-repeat;
+  background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%), url("../img/welcome/welcome_bg.jpg"), lightgray 50%/cover no-repeat;
   background-size: cover;
+}
+@media (max-width: 1024px) {
+  .welcome-container {
+    background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%), url("../img/welcome/welcome.jpg"), lightgray 50%/cover no-repeat;
+  }
 }
 
 .welcome-content {
@@ -436,12 +441,59 @@ h5 {
   text-transform: none;
   margin: 0;
 }
+@media (max-width: 1024px) {
+  .description {
+    margin: 0 20px;
+  }
+}
+
+.about-images {
+  position: relative;
+}
+.about-images img:last-child {
+  display: none;
+}
+.about-images img:nth-last-child(2) {
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  .about-images img:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 955px) {
+  .about-images {
+    justify-content: center;
+  }
+  .about-images img:nth-child(3) {
+    display: none;
+  }
+}
 
 .carousel {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 35px 0 55px;
+}
+.carousel div:last-child {
+  display: none;
+}
+.carousel div:nth-last-child(2) {
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  .carousel div:nth-last-child(2) {
+    display: flex;
+  }
+}
+@media screen and (max-width: 955px) {
+  .carousel {
+    justify-content: center;
+  }
+  .carousel div:last-child {
+    display: flex;
+  }
 }
 
 .pagination-button {
@@ -459,10 +511,26 @@ h5 {
   height: 16px;
   background: #0c0c0e;
   border-radius: 50%;
+  border: 0;
 }
 
 .active {
   background: #bb945f;
+}
+
+.carrets {
+  display: none;
+  width: 614px;
+  justify-content: space-between;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+@media screen and (max-width: 955px) {
+  .carrets {
+    display: flex;
+  }
 }
 
 .favorites-container {
@@ -718,6 +786,7 @@ h5 {
   height: 386px;
   border: 3px solid #bb945f;
   background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .bg-form {

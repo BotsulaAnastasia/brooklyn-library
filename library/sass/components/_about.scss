@@ -2,6 +2,30 @@
   text-align: center;
   @include font(2rem, normal, 400, 4rem, normal, none);
   margin: 0;
+  @include media-transition {
+    margin: 0 20px;
+  }
+}
+
+.about-images {
+  position: relative;
+  & img:last-child {
+    display: none;
+  }
+  & img:nth-last-child(2) {
+    display: none;
+  }
+  @media screen and (max-width: 1400px) {
+    & img:nth-child(4) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 955px) {
+    justify-content: center;
+    & img:nth-child(3) {
+      display: none;
+    }
+  }
 }
 
 .carousel {
@@ -9,6 +33,23 @@
   align-items: center;
   justify-content: center;
   margin: 35px 0 55px;
+  & div:last-child {
+    display: none;
+  }
+  & div:nth-last-child(2) {
+    display: none;
+  }
+  @media screen and (max-width: 1400px) {
+    & div:nth-last-child(2) {
+      display: flex;
+    }
+  }
+  @media screen and (max-width: 955px) {
+    justify-content: center;
+    & div:last-child {
+      display: flex;
+    }
+  }
 }
 
 .pagination-button {
@@ -26,8 +67,22 @@
   height: 16px;
   background: $color-primary;
   border-radius: 50%;
+  border: 0;
 }
 
 .active {
   background: $color-additional;
+}
+
+.carrets {
+  display: none;
+  width: 614px;
+  justify-content: space-between;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  @media screen and (max-width: 955px) {
+    display: flex;
+  }
 }
