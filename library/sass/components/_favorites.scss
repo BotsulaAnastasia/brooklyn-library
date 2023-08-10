@@ -1,5 +1,8 @@
 .favorites-container {
   padding: 0 60px 0 20px;
+  @media screen and (max-width: 1250px) {
+    padding: 0 0 0 20px;
+  }
 }
 
 .subtitle-favorites {
@@ -68,6 +71,13 @@
 
 .real-radio:checked + .custom-radio::before {
   transform: translate(-50%, -50%) scale(1);
+}
+
+.favorite-column {
+  @media screen and (max-width: 1250px) {
+    display: inline-block;
+    margin-left: 69px;
+  }
 }
 
 .block-favorite {

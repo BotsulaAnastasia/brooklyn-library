@@ -536,6 +536,11 @@ h5 {
 .favorites-container {
   padding: 0 60px 0 20px;
 }
+@media screen and (max-width: 1250px) {
+  .favorites-container {
+    padding: 0 0 0 20px;
+  }
+}
 
 .subtitle-favorites {
   font-size: 2rem;
@@ -614,6 +619,13 @@ h5 {
   transform: translate(-50%, -50%) scale(1);
 }
 
+@media screen and (max-width: 1250px) {
+  .favorite-column {
+    display: inline-block;
+    margin-left: 69px;
+  }
+}
+
 .block-favorite {
   position: relative;
   width: 550px;
@@ -663,12 +675,13 @@ h5 {
 
 .description--cshop {
   letter-spacing: 2px;
+  margin: 0;
 }
 
 .cshop-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
 
 .drink-menu {
@@ -708,6 +721,13 @@ h5 {
   align-items: flex-end;
   gap: 40px;
 }
+@media (max-width: 1024px) {
+  .desserts-menu {
+    position: absolute;
+    right: 0;
+    top: 560px;
+  }
+}
 
 .desserts-menu-line {
   display: flex;
@@ -718,6 +738,11 @@ h5 {
 
 .contacts-container {
   padding: 0 20px 40px;
+}
+@media (max-width: 1024px) {
+  .contacts-container {
+    margin-top: 580px;
+  }
 }
 
 .contacts-info {

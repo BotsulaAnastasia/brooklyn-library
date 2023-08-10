@@ -4,12 +4,13 @@
 
 .description--cshop {
   letter-spacing: 2px;
+  margin: 0;
 }
 
 .cshop-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
 
 .drink-menu {
@@ -47,6 +48,11 @@
   justify-content: center;
   align-items: flex-end;
   gap: 40px;
+  @include media-transition {
+    position: absolute;
+    right: 0;
+    top: 560px;
+  }
 }
 
 .desserts-menu-line {
