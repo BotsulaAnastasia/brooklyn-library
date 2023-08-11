@@ -9,6 +9,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  @media screen and (max-width: 1300px) {
+    display: block;
+  }
 }
 
 .phone-info {
@@ -25,6 +28,9 @@
   &--basic {
     @include font(2rem, normal, 400, 4rem, 2px, capitalize);
   }
+  @media screen and (max-width: 1300px) {
+    margin-bottom: 100px;
+  }
 }
 
 .contact-link {
@@ -32,5 +38,13 @@
   text-decoration: none;
   &:hover {
     color: $color-additional;
+  }
+}
+
+.map {
+  @media screen and (max-width: 1300px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

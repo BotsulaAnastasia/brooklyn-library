@@ -15,6 +15,7 @@ body {
   font-size: 1.6rem;
   font-family: "Inter", Verdana, sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -131,6 +132,11 @@ h5 {
 .button--profile:hover {
   border: 1px solid #bb945f;
   background: #bb945f;
+}
+@media screen and (max-width: 1200px) {
+  .button--profile:first-child {
+    margin: 0;
+  }
 }
 
 .burger-line, .burger:after, .burger:before {
@@ -387,7 +393,7 @@ h5 {
   width: 600px;
   box-sizing: border-box;
   padding: 35px 40px;
-  margin: 220px 840px 160px 0;
+  margin: 220px auto 160px 0;
   justify-content: center;
   align-items: center;
   background: #0c0c0e;
@@ -533,15 +539,6 @@ h5 {
   }
 }
 
-.favorites-container {
-  padding: 0 60px 0 20px;
-}
-@media screen and (max-width: 1250px) {
-  .favorites-container {
-    padding: 0 0 0 20px;
-  }
-}
-
 .subtitle-favorites {
   font-size: 2rem;
   font-style: normal;
@@ -549,6 +546,7 @@ h5 {
   line-height: normal;
   letter-spacing: normal;
   text-transform: none;
+  margin-left: 20px;
 }
 
 .seasons {
@@ -557,8 +555,7 @@ h5 {
   height: 24px;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 0 40px 20px;
 }
 
 .season-text {
@@ -619,10 +616,15 @@ h5 {
   transform: translate(-50%, -50%) scale(1);
 }
 
+.favorite-column {
+  margin: 0 60px 0 20px;
+}
 @media screen and (max-width: 1250px) {
   .favorite-column {
-    display: inline-block;
-    margin-left: 69px;
+    display: block;
+    width: 590px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -750,6 +752,11 @@ h5 {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media screen and (max-width: 1300px) {
+  .contacts-info {
+    display: block;
+  }
+}
 
 .phone-info {
   margin-bottom: 40px;
@@ -774,6 +781,11 @@ h5 {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
+@media screen and (max-width: 1300px) {
+  .text-info {
+    margin-bottom: 100px;
+  }
+}
 
 .contact-link {
   color: #000;
@@ -783,12 +795,32 @@ h5 {
   color: #bb945f;
 }
 
+@media screen and (max-width: 1300px) {
+  .map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .library-card-container {
   padding: 0px 20px 41px;
+}
+@media screen and (max-width: 1200px) {
+  .library-card-container {
+    padding: 0px 0 40px;
+  }
 }
 
 .library-card-content {
   display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  .library-card-content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .find-card-title {
@@ -856,8 +888,12 @@ h5 {
 }
 
 .get-card {
-  margin: 0 0 0 auto;
-  width: 456px;
+  width: 768px;
+}
+@media screen and (max-width: 1200px) {
+  .get-card {
+    margin-top: 21px;
+  }
 }
 
 .get-card-title {
@@ -870,6 +906,11 @@ h5 {
   text-align: right;
   margin: 0;
 }
+@media screen and (max-width: 1200px) {
+  .get-card-title {
+    text-align: center;
+  }
+}
 
 .get-card-text {
   width: 456px;
@@ -880,10 +921,22 @@ h5 {
   line-height: 4rem;
   letter-spacing: 0.4px;
   text-transform: none;
-  margin: 35px 0;
+  margin: 35px 0 35px auto;
+}
+@media screen and (max-width: 1200px) {
+  .get-card-text {
+    text-align: center;
+    margin: 35px auto;
+    width: 600px;
+  }
 }
 
 .get-card-button {
   display: flex;
   justify-content: flex-end;
+}
+@media screen and (max-width: 1200px) {
+  .get-card-button {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */

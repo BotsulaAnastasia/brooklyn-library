@@ -53,5 +53,10 @@
       border: 1px solid $color-additional;
       background: $color-additional;
     }
+    @media screen and (max-width: 1200px) {
+      &:first-child {
+        margin: 0;
+      }
+    }
   }
 }

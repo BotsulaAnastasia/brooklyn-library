@@ -1,9 +1,17 @@
 .library-card-container {
   padding: 0px 20px 41px;
+  @media screen and (max-width: 1200px) {
+    padding: 0px 0 40px;
+  }
 }
 
 .library-card-content {
   display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .find-card-title {
@@ -59,8 +67,10 @@
 }
 
 .get-card {
-  margin: 0 0 0 auto;
-  width: 456px;
+  width: 768px;
+  @media screen and (max-width: 1200px) {
+    margin-top: 21px;
+  }
 }
 
 .get-card-title {
@@ -68,16 +78,27 @@
   @include font(3rem, normal, 400, normal, 0.6px, none);
   text-align: right;
   margin: 0;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
 }
 
 .get-card-text {
   width: 456px;
   text-align: right;
   @include font(2rem, normal, 400, 4rem, 0.4px, none);
-  margin: 35px 0;
+  margin: 35px 0 35px auto;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+    margin: 35px auto;
+    width: 600px;
+  }
 }
 
 .get-card-button {
   display: flex;
   justify-content: flex-end;
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+  }
 }
