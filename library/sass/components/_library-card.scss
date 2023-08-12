@@ -67,7 +67,6 @@
 }
 
 .get-card {
-  width: 768px;
   @media screen and (max-width: 1200px) {
     margin-top: 21px;
   }
@@ -90,7 +89,7 @@
   margin: 35px 0 35px auto;
   @media screen and (max-width: 1200px) {
     text-align: center;
-    margin: 35px auto;
+    margin: 40px auto;
     width: 600px;
   }
 }
