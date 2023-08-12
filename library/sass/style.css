@@ -483,14 +483,14 @@ h5 {
   justify-content: center;
   margin: 35px 0 55px;
 }
-.carousel div:last-child {
+.carousel button:last-child {
   display: none;
 }
-.carousel div:nth-last-child(2) {
+.carousel button:nth-last-child(2) {
   display: none;
 }
 @media screen and (max-width: 1400px) {
-  .carousel div:nth-last-child(2) {
+  .carousel button:nth-last-child(2) {
     display: flex;
   }
 }
@@ -498,19 +498,27 @@ h5 {
   .carousel {
     justify-content: center;
   }
-  .carousel div:last-child {
+  .carousel button:last-child {
     display: flex;
   }
 }
 
 .pagination-button {
+  border: 0;
   background: none;
   width: 26px;
   height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
   cursor: pointer;
+}
+.pagination-button:focus {
+  outline: none;
+}
+.pagination-button:focus .pagination--colour {
+  background: #bb945f;
 }
 
 .pagination--colour {
@@ -519,10 +527,6 @@ h5 {
   background: #0c0c0e;
   border-radius: 50%;
   border: 0;
-}
-
-.active {
-  background: #bb945f;
 }
 
 .carrets {

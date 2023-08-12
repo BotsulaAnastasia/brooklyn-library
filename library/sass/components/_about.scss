@@ -33,33 +33,41 @@
   align-items: center;
   justify-content: center;
   margin: 35px 0 55px;
-  & div:last-child {
+  & button:last-child {
     display: none;
   }
-  & div:nth-last-child(2) {
+  & button:nth-last-child(2) {
     display: none;
   }
   @media screen and (max-width: 1400px) {
-    & div:nth-last-child(2) {
+    & button:nth-last-child(2) {
       display: flex;
     }
   }
   @media screen and (max-width: 955px) {
     justify-content: center;
-    & div:last-child {
+    & button:last-child {
       display: flex;
     }
   }
 }
 
 .pagination-button {
+  border: 0;
   background: none;
   width: 26px;
   height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
   cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  &:focus .pagination--colour {
+    background: $color-additional;
+  }
 }
 
 .pagination--colour {
@@ -68,10 +76,6 @@
   background: $color-primary;
   border-radius: 50%;
   border: 0;
-}
-
-.active {
-  background: $color-additional;
 }
 
 .carrets {
