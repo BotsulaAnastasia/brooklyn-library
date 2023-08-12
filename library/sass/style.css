@@ -148,6 +148,18 @@ h5 {
   height: 2px;
 }
 
+.burger-btn {
+  display: none;
+  width: 45px;
+  height: 22px;
+  margin-right: 20px;
+}
+@media (max-width: 1024px) {
+  .burger-btn {
+    display: inline-block;
+  }
+}
+
 .burger {
   display: none;
   position: relative;
@@ -249,6 +261,15 @@ h5 {
 }
 .nav-link:hover::after {
   width: 100%;
+}
+
+.tablet-menu {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .tablet-menu {
+    display: inline-block;
+  }
 }
 
 .icon-profile {
@@ -587,7 +608,6 @@ input[type=radio]:checked + label {
 }
 
 .real-radio {
-  display: none;
   width: 0;
   height: 0;
   position: absolute;
