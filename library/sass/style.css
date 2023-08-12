@@ -566,18 +566,24 @@ h5 {
   letter-spacing: normal;
   text-transform: none;
   padding: 5px;
-  cursor: pointer;
 }
-.season-text--bold {
+
+.real-radio:checked ~ .season-text {
   font-weight: 700;
 }
 
 .seasons-var {
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+input[type=radio]:checked + label {
+  font-weight: 700;
 }
 
 .real-radio {
+  display: none;
   width: 0;
   height: 0;
   position: absolute;
@@ -586,17 +592,16 @@ h5 {
 }
 
 .custom-radio {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   width: 17px;
   height: 17px;
   background: white;
   border: 2px solid black;
   border-radius: 50%;
-  vertical-align: text-top;
   margin-right: 15px;
-  cursor: pointer;
 }
 
 .custom-radio::before {
@@ -606,14 +611,11 @@ h5 {
   height: 8px;
   background: black;
   border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: scale(0);
 }
 
 .real-radio:checked + .custom-radio::before {
-  transform: translate(-50%, -50%) scale(1);
+  transform: scale(1);
 }
 
 .favorite-column {
