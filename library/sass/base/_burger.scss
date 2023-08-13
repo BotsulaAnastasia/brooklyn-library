@@ -7,16 +7,6 @@
     height: 2px;
 }
 
-.burger-btn {
-    display: none;
-    width: 45px;
-    height: 22px;
-    margin-right: 20px;
-    @include media-transition {
-        display: inline-block;
-    }
-}
-
 .burger {
     display: none;
     position: relative;
@@ -28,11 +18,13 @@
     }
     &:before {
         @extend %burger-line;
+        @extend %transition;
         top: 0;
         right: 0;
     }
     &:after {
         @extend %burger-line;
+        @extend %transition;
         bottom: 0;
         right: 0;
     }
@@ -40,6 +32,30 @@
 
 .burger-line {
     @extend %burger-line;
+    @extend %transition;
     top: calc( 50% - 1px );
     right: 0;
+    transform: scale(1);
+}
+
+.tablet-menu {
+    display: none;
+    @include media-transition {
+      display: inline-block;
+      height: 22px;
+    }
+}
+  
+.tablet-menu.--active .burger-line {
+    transform: scale(0);
+}
+  
+.tablet-menu.--active .burger::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+  
+.tablet-menu.--active .burger::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
 }
