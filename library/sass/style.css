@@ -237,17 +237,6 @@ h5 {
   }
 }
 
-.header-navigation::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  top: 0;
-  right: 0;
-  height: 90px;
-  background: #0c0c0e;
-  z-index: 1;
-}
-
 .header-navigation.--active {
   transform: translate(0, 0);
 }
