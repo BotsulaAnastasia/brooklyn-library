@@ -11,7 +11,7 @@
   display: flex;
   position: relative;
   gap: 25px;
-  transition: all ease-out 1s;
+  transition: all ease-out 0.6s;
 }
 
 .carousel {
@@ -38,7 +38,7 @@
   }
 }
 
-.pagination-button {
+.slider-dot {
   border: 0;
   background: none;
   width: 26px;
@@ -56,12 +56,18 @@
   }
 }
 
-.pagination--colour {
+.dot--colour {
   width: 16px;
   height: 16px;
   background: $color-primary;
   border-radius: 50%;
   border: 0;
+}
+
+.active--dot {
+  & span {
+    background: $color-additional;
+  }
 }
 
 .slider-wrapper {
