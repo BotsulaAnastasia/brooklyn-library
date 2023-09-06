@@ -1,4 +1,4 @@
-.custom-radio::before, .icon-profile-path, .burger-line, .burger:after, .burger:before, .button, h1:hover {
+.icon-profile-path, .burger-line, .burger:after, .burger:before, .button, h1:hover {
   transition: all 0.3s ease-out;
 }
 
@@ -609,16 +609,29 @@ h5 {
   line-height: normal;
   letter-spacing: normal;
   text-transform: none;
+  margin: 41px 0 40px 20px;
+}
+
+.seasons-radio-wrapper {
   margin-left: 20px;
+  margin-bottom: 35px;
 }
 
 .seasons {
-  display: flex;
-  max-width: 700px;
+  display: inline-flex;
+  width: 130px;
   height: 24px;
-  justify-content: space-between;
   align-items: center;
-  margin: 40px 0 40px 20px;
+  margin-right: 58px;
+}
+.seasons:last-child {
+  margin-left: 12px;
+  margin-right: 0;
+}
+@media screen and (max-width: 740px) {
+  .seasons {
+    margin-right: 20px;
+  }
 }
 
 .season-text {
@@ -628,7 +641,7 @@ h5 {
   line-height: normal;
   letter-spacing: normal;
   text-transform: none;
-  padding: 5px;
+  padding: 5px 5px 5px 15px;
 }
 
 .real-radio:checked ~ .season-text {
@@ -640,44 +653,44 @@ h5 {
   align-items: center;
   cursor: pointer;
 }
+.seasons-var:first-child {
+  margin-left: -5px;
+}
 
 input[type=radio]:checked + label {
   font-weight: 700;
 }
 
 .real-radio {
-  width: 0;
-  height: 0;
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
+  -webkit-appearance: none;
+  -moz-appearanceone: none;
+  -moz-appearance: none;
+       appearance: none;
+  appearance: none;
+  position: relative;
+  width: 27px;
+  height: 24px;
+  padding: 5px;
+  margin: 0;
+  cursor: pointer;
 }
 
-.custom-radio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 17px;
-  height: 17px;
-  background: white;
-  border: 2px solid black;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-.custom-radio::before {
+.radio::before {
   content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: black;
+  position: absolute;
+  top: 18%;
+  left: 18%;
+  display: block;
+  width: 7px;
+  height: 7px;
+  padding: 3px;
+  border: 2px solid #0C0C0E;
   border-radius: 50%;
-  transform: scale(0);
 }
 
-.real-radio:checked + .custom-radio::before {
-  transform: scale(1);
+.radio:checked:before {
+  background-color: #0C0C0E;
+  background-clip: content-box;
 }
 
 .favorite-column {
@@ -732,6 +745,12 @@ input[type=radio]:checked + label {
   position: absolute;
   right: -40px;
   bottom: -1px;
+}
+
+div.spring,
+div.summer,
+div.autumn {
+  display: none;
 }
 
 .cshop-container {
