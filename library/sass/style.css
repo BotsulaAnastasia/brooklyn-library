@@ -609,12 +609,21 @@ h5 {
   line-height: normal;
   letter-spacing: normal;
   text-transform: none;
-  margin: 41px 0 40px 20px;
+  margin: 41px 0 29px 20px;
 }
 
 .seasons-radio-wrapper {
   margin-left: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
+  height: 45px;
+}
+@media screen and (max-width: 1250px) {
+  .seasons-radio-wrapper {
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+    background: #fff;
+  }
 }
 
 .seasons {
@@ -623,6 +632,7 @@ h5 {
   height: 24px;
   align-items: center;
   margin-right: 58px;
+  transform: translateY(50%);
 }
 .seasons:last-child {
   margin-left: 12px;
