@@ -503,6 +503,14 @@ h5 {
   margin: 0;
 }
 
+.underline-profile {
+  width: 4rem;
+  height: 0.1rem;
+  background: #bb945f;
+  border: 0;
+  margin: 0 auto 15px;
+}
+
 .description {
   text-align: center;
   font-size: 2rem;
@@ -1029,4 +1037,30 @@ div#autumn {
   .get-card-button {
     justify-content: center;
   }
+}
+
+.menu-profile {
+  display: none;
+  color: #000;
+  width: 80px;
+  height: 115px;
+  background: #FFF;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: normal;
+  text-transform: none;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-profile p {
+  margin: 0;
+}
+.menu-profile p:first-child {
+  font-weight: 700;
+  margin: 5px auto;
+}
+.menu-profile p:last-child {
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */
