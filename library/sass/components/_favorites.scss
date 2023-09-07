@@ -120,8 +120,8 @@ input[type="radio"]:checked + label {
   bottom: -1px;
 }
 
-div.spring,
-div.summer,
-div.autumn {
+div#spring,
+div#summer,
+div#autumn {
   display: none;
 }

@@ -18,7 +18,7 @@ if (menuBody.classList.contains('--active')) {
 
 }
 */
-
+/* Карусель в секции About */
 let carretLeft = document.getElementById("carret-left"),
     carretRight = document.getElementById("carret-right"),
     sliderImg = document.getElementById("slider-images"),
@@ -74,3 +74,40 @@ carousel.forEach((dot, index) => {
         }
     });
 });
+
+/* Слайдер FadeIn, FadeOut в секции Favorites */
+const fadeIn = (el, timeout, display) => {
+    el.style.opacity = 0;
+    el.style.display = display || 'block';
+    el.style.transition = `opacity ${timeout}ms`;
+    setTimeout(() => {
+        el.style.opacity = 1;
+    }, 10);
+};
+
+const fadeOut = (el, timeout) => {
+    el.style.opacity = 1;
+    el.style.transition = `opacity ${timeout}ms`;
+    el.style.opacity = 0;
+
+    setTimeout(() => {
+        el.style.display = 'none';
+    }, timeout);
+};
+
+const bookBlock = document.querySelectorAll('.books-block');
+const radioBtn = document.querySelectorAll('input[name=favorite-season]');
+
+radioBtn.forEach((radio, index) => {
+    radio.addEventListener("click", () => {
+        let tabId = radio.getAttribute('data-tab');
+        let currentTab = document.querySelector(tabId);
+
+        bookBlock.forEach((item) => {
+            item.style.display = 'none';
+        });
+
+        fadeIn(currentTab, 1000, 'flex');
+    });
+});
+
