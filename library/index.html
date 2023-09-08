@@ -742,7 +742,7 @@
       <p>Log In</p>
       <p>Register</p>
     </div>
-    <div class="modal-login-register">
+    <div class="modal-login-register" id="login">
       <div class="modal-cross"></div>
       <h5>Login</h5>
       <form action="URL" method="post" class="modal-form">
@@ -756,6 +756,25 @@
       </div>
       <span>Don’t have an account?</span>
       <span>Register</span>
+    </div>
+    <div class="modal-login-register" id="register">
+      <div class="modal-cross"></div>
+      <h5>Register</h5>
+      <form action="URL" method="post" class="modal-form">
+        <p>First name</p>
+        <input class="modal-input" type="text" name="first-name">
+        <p>Last name</p>
+        <input class="modal-input" type="text" name="last-name">
+        <p>E-mail</p>
+        <input class="modal-input" type="text" name="e-mail">
+        <p>Password</p>
+        <input class="modal-input" type="text" name="password">
+      </form>
+      <div class="modal-btn-wrapper">
+        <button class="button button--profile">Sign Up</button> 
+      </div>
+      <span>Already have an account?</span>
+      <span>Login</span>
     </div>
     <script src="js/script.js"></script>
   </body>
