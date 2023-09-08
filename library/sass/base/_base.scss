@@ -53,9 +53,8 @@ h5 {
 .modal-cross {
   width: 17px;
   height: 17px;
-  position: relative;
+  position: absolute;
   display: inline-block;
-  margin: 15px 0 auto 193px;
   cursor: pointer;
   &::before {
     top: 40%;

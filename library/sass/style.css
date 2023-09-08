@@ -81,9 +81,8 @@ h5 {
 .modal-cross {
   width: 17px;
   height: 17px;
-  position: relative;
+  position: absolute;
   display: inline-block;
-  margin: 15px 0 auto 193px;
   cursor: pointer;
 }
 .modal-cross::before {
@@ -1120,10 +1119,9 @@ div#autumn {
 }
 
 .modal-login-register {
-  display: none;
   width: 250px;
   background: #FFF;
-  padding: 0 25px 20px;
+  padding: 15px 25px 20px;
   box-sizing: border-box;
 }
 .modal-login-register h5 {
@@ -1131,7 +1129,7 @@ div#autumn {
   font-size: 2rem;
   line-height: 2rem;
   letter-spacing: 0.4px;
-  margin-top: -15px;
+  margin-top: 5px;
   margin-bottom: 20px;
 }
 .modal-login-register span {
@@ -1153,6 +1151,9 @@ div#autumn {
   letter-spacing: 1px;
   text-decoration-line: underline;
   margin-left: 5px;
+}
+.modal-login-register div.modal-cross {
+  left: 220px;
 }
 
 .modal-form {
@@ -1179,6 +1180,157 @@ div#autumn {
 }
 
 .modal-btn-wrapper {
-  margin-top: 20px;
-  margin-bottom: 5px;
+  margin: 20px auto 5px -20px;
+}
+
+.modal-profile {
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  display: flex;
+}
+
+.user-name-block {
+  width: 170px;
+  background: #0c0c0e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-initials {
+  width: 80px;
+  height: 80px;
+  background: #FFF;
+  color: #bb945f;
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+.user-initials p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.user-name {
+  width: 120px;
+  background: #FFF;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: normal;
+  text-transform: none;
+  box-sizing: border-box;
+}
+.user-name p {
+  margin: 5px auto;
+}
+
+.profile-info {
+  width: 430px;
+  padding: 25px 0 39px 20px;
+  box-sizing: border-box;
+}
+.profile-info h5 {
+  color: #000;
+  text-align: start;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.profile-info div.modal-cross {
+  left: 560px;
+}
+
+.cards-profile {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.card span:first-child {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.4px;
+  text-transform: none;
+}
+.card span.count-of {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+}
+
+.rented-books p {
+  color: #0c0c0e;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: normal;
+  text-transform: none;
+  margin: 20px 0 30px;
+}
+.rented-books ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 50px;
+  overflow: auto;
+  margin: 0;
+}
+.rented-books ul > li {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.card-number {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+  align-items: center;
+}
+.card-number span {
+  color: #0c0c0e;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.card-number span.number {
+  color: #bb945f;
+}
+.card-number img {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
