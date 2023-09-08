@@ -9,6 +9,7 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -254,7 +255,7 @@ h5 {
     max-width: 332px;
     max-height: 570px;
     box-sizing: border-box;
-    transform: translate(0, -100%);
+    transform: translate(100%, 0);
     background: #0c0c0e;
     top: 0;
     right: 0;
@@ -338,6 +339,7 @@ h5 {
 .icon-profile {
   display: flex;
   margin-right: 20px;
+  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .icon-profile {
