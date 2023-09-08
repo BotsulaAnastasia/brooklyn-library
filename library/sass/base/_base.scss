@@ -48,3 +48,29 @@ h5 {
   text-align: center;
   margin: 0;
 }
+
+.modal-cross {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  display: inline-block;
+  margin: 15px 0 auto 193px;
+  cursor: pointer;
+  &::before {
+    top: 40%;
+    left: -1px;
+    transform: rotate(-45deg);
+  }
+  &::after {
+    top: 40%;
+    left: -1px;
+    transform: rotate(45deg);
+  }
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    width: 21.108px;
+    height: 3px;
+    background: $color-primary;
+  }
+}

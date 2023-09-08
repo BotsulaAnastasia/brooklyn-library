@@ -77,6 +77,32 @@ h5 {
   margin: 0;
 }
 
+.modal-cross {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  display: inline-block;
+  margin: 15px 0 auto 193px;
+  cursor: pointer;
+}
+.modal-cross::before {
+  top: 40%;
+  left: -1px;
+  transform: rotate(-45deg);
+}
+.modal-cross::after {
+  top: 40%;
+  left: -1px;
+  transform: rotate(45deg);
+}
+.modal-cross::before, .modal-cross::after {
+  content: "";
+  position: absolute;
+  width: 21.108px;
+  height: 3px;
+  background: #0c0c0e;
+}
+
 .button {
   font-family: "Inter", Verdana, sans-serif;
   font-style: normal;
@@ -122,6 +148,7 @@ h5 {
 }
 .button--profile {
   width: 75px;
+  height: 30px;
   text-align: center;
   font-size: 1rem;
   color: #0c0c0e;
@@ -1063,4 +1090,69 @@ div#autumn {
 }
 .menu-profile p:last-child {
   margin-top: 10px;
+}
+
+.modal-login-register {
+  display: none;
+  width: 250px;
+  height: 262px;
+  background: #FFF;
+  padding: 0 25px 20px;
+  box-sizing: border-box;
+}
+.modal-login-register h5 {
+  color: #000;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.4px;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+.modal-login-register span {
+  color: #000;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.modal-login-register span:first-child {
+  cursor: pointer;
+}
+.modal-login-register span:last-child {
+  color: #0c0c0e;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration-line: underline;
+  margin-left: 5px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-form p {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.3px;
+  text-transform: none;
+  color: #000;
+  margin: 0;
+}
+.modal-form input {
+  width: 200px;
+  height: 20px;
+  flex-shrink: 0;
+  border: 1px solid #bb945f;
+  box-sizing: border-box;
+}
+
+.modal-btn-wrapper {
+  margin-top: 20px;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */

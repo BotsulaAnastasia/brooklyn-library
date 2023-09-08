@@ -1,0 +1,54 @@
+.modal-login-register {
+    display: none;
+    width: 250px;
+    height: 262px;
+    background: #FFF;
+    padding: 0 25px 20px;
+    box-sizing: border-box;
+    & h5 {
+        color: #000;
+        font-size: 2rem;
+        line-height: 2rem;
+        letter-spacing: 0.4px;
+        margin-top: -15px;
+        margin-bottom: 20px;
+    }
+    & span {
+        color: #000;
+        text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+        @include font(1rem, normal, 400, normal, normal, none);
+    }
+    & span:first-child {
+        cursor: pointer;
+    }
+    & span:last-child {
+        color: $color-primary;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration-line: underline;
+        margin-left: 5px;
+    }
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & p {
+        @include font(1.5rem, normal, 400, 2rem, 0.3px, none);
+        color: #000;
+        margin: 0;
+    }
+    & input {
+        width: 200px;
+        height: 20px;
+        flex-shrink: 0;
+        border: 1px solid $color-additional;
+        box-sizing: border-box;
+    }
+}
+
+.modal-btn-wrapper {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
