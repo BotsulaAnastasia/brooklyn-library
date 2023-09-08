@@ -2,19 +2,34 @@
 var burgerMenu = document.querySelector('.tablet-menu');
 var menuBody = document.querySelector('.header-navigation');
 if (burgerMenu) {
-    burgerMenu.addEventListener("click", function (e) {
+    burgerMenu.addEventListener("click", (e) => {
         burgerMenu.classList.toggle('--active');
         menuBody.classList.toggle('--active');
     })
 }
 
 /* Закрытие бургер меню при клике вне области */
-var iconProfile = document.querySelector('.icon-profile');
 window.addEventListener("click", (e) => {
     const target = e.target;
     if (!target.closest('.tablet-menu') && !target.closest('.header-navigation')) {
         burgerMenu.classList.remove('--active');
         menuBody.classList.remove('--active');
+    }
+});
+
+/* drop menu-profile */
+var menuProfile = document.querySelector('.menu-profile');
+var iconProfile = document.querySelector('.icon-profile');
+if (menuProfile) {
+    iconProfile.addEventListener("click", (e) => {
+        menuProfile.classList.toggle('--active');
+    })
+}
+
+window.addEventListener("click", (e) => {
+    const target = e.target;
+    if (!target.closest('.menu-profile') && !target.closest('.icon-profile')) {
+        menuProfile.classList.remove('--active');
     }
 });
 

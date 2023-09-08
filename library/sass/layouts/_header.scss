@@ -94,10 +94,14 @@
   display: flex;
   margin-right: 20px;
   cursor: pointer;
+  width: 34px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
   @include media-transition {
     position: absolute;
     top: 50%;
-    margin-top: -14px;
-    right: 85px;
+    transform: translateY(-50%);
+    right: 83px;
   }
 }
