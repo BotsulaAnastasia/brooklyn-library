@@ -1,3 +1,4 @@
+/* Бургер меню */
 var burgerMenu = document.querySelector('.tablet-menu');
 var menuBody = document.querySelector('.header-navigation');
 if (burgerMenu) {
@@ -6,18 +7,17 @@ if (burgerMenu) {
         menuBody.classList.toggle('--active');
     })
 }
-/*
-if (menuBody.classList.contains('--active')) {
-    const menuBody = document.querySelector('.header-navigation');
-     
-    document.onclick = function (e) {
-        if (e.target.className != "header-navigation") {
-            menuBody.style.display = "none";
-        };
-    };
 
-}
-*/
+/* Закрытие бургер меню при клике вне области */
+var iconProfile = document.querySelector('.icon-profile');
+window.addEventListener("click", (e) => {
+    const target = e.target;
+    if (!target.closest('.tablet-menu') && !target.closest('.header-navigation')) {
+        burgerMenu.classList.remove('--active');
+        menuBody.classList.remove('--active');
+    }
+});
+
 /* Карусель в секции About */
 let carretLeft = document.getElementById("carret-left"),
     carretRight = document.getElementById("carret-right"),
