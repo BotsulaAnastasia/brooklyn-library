@@ -61,8 +61,8 @@
         <div class="menu-profile no-auth">
           <p>Profile</p>
           <hr class="underline-profile">
-          <p class="menu-profile-chapter">Log In</p>
-          <p class="menu-profile-chapter">Register</p>
+          <p class="menu-profile-chapter" id="login-chapter">Log In</p>
+          <p class="menu-profile-chapter" id="register-chapter">Register</p>
         </div>
       </div>
     </header>
@@ -671,8 +671,8 @@
                 or you can register a new account
               </p>
               <div class="get-card-button">
-                <button class="button button--profile">Sign Up</button>
-                <button class="button button--profile">Log in</button>
+                <button class="button button--profile" id="btn-signup">Sign Up</button>
+                <button class="button button--profile" id="btn-login">Log in</button>
               </div>
             </div>
           </div>
@@ -742,81 +742,87 @@
         </div>
       </div>
     </footer>
-    <div class="modal-login-register" id="login">
-      <div class="modal-cross"></div>
-      <h5>Login</h5>
-      <form action="URL" method="post" class="modal-form">
-        <p>E-mail or readers card</p>
-        <input class="modal-input" type="text" name="e-mail">
-        <p>Password</p>
-        <input class="modal-input" type="text" name="password">
-      </form>
-      <div class="modal-btn-wrapper">
-        <button class="button button--profile">Log in</button> 
-      </div>
-      <span>Don’t have an account?</span>
-      <span>Register</span>
-    </div>
-    <div class="modal-login-register" id="register">
-      <div class="modal-cross"></div>
-      <h5>Register</h5>
-      <form action="URL" method="post" class="modal-form">
-        <p>First name</p>
-        <input class="modal-input" type="text" name="first-name">
-        <p>Last name</p>
-        <input class="modal-input" type="text" name="last-name">
-        <p>E-mail</p>
-        <input class="modal-input" type="text" name="e-mail">
-        <p>Password</p>
-        <input class="modal-input" type="text" name="password">
-      </form>
-      <div class="modal-btn-wrapper">
-        <button class="button button--profile">Sign Up</button> 
-      </div>
-      <span>Already have an account?</span>
-      <span>Login</span>
-    </div>
-    <div class="modal-profile">
-      <div class="user-name-block">
-        <div class="user-initials">
-          <p>JD</p>
-        </div>
-        <div class="user-name">
-          <p>John Doe</p>
-        </div>
-      </div>
-      <div class="profile-info">
+    <div class="overlay" id="login">
+      <div class="modal-login-register modal">
         <div class="modal-cross"></div>
-        <h5>My profile</h5>
-        <div class="cards-profile">
-          <div class="card">
-            <span>Visits</span>
-            <img src="./img/union_profile.svg" alt="union" width="20px" height="21px">
-            <span class="count-of">23</span>
+        <h5>Login</h5>
+        <form action="URL" method="post" class="modal-form">
+          <p>E-mail or readers card</p>
+          <input class="modal-input" type="text" name="e-mail">
+          <p>Password</p>
+          <input class="modal-input" type="text" name="password">
+        </form>
+        <div class="modal-btn-wrapper">
+          <button class="button button--profile">Log in</button> 
+        </div>
+        <span>Don’t have an account?</span>
+        <span>Register</span>
+      </div>
+    </div>
+    <div class="overlay" id="register">
+      <div class="modal-login-register modal">
+        <div class="modal-cross"></div>
+        <h5>Register</h5>
+        <form action="URL" method="post" class="modal-form">
+          <p>First name</p>
+          <input class="modal-input" type="text" name="first-name">
+          <p>Last name</p>
+          <input class="modal-input" type="text" name="last-name">
+          <p>E-mail</p>
+          <input class="modal-input" type="text" name="e-mail">
+          <p>Password</p>
+          <input class="modal-input" type="text" name="password">
+        </form>
+        <div class="modal-btn-wrapper">
+          <button class="button button--profile">Sign Up</button> 
+        </div>
+        <span>Already have an account?</span>
+        <span>Login</span>
+      </div>
+    </div>
+    <div class="overlay" id="profile">
+      <div class="modal-profile modal">
+        <div class="user-name-block">
+          <div class="user-initials">
+            <p>JD</p>
           </div>
-          <div class="card">
-            <span>Bonuses</span>
-            <img src="./img/star_profile.svg" alt="star" width="20px" height="21px">
-            <span class="count-of">23</span>
-          </div>
-          <div class="card">
-            <span>Books</span>
-            <img src="./img/book_profile.svg" alt="book" width="20px" height="21px">
-            <span class="count-of">23</span>
+          <div class="user-name">
+            <p>John Doe</p>
           </div>
         </div>
-        <div class="rented-books">
-          <p>Rented books</p>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </ul>
-        </div>
-        <div class="card-number">
-          <span>Card number</span>
-          <span class="number">F00234030</span>
-          <img src="./img/icon_copy.svg" alt="icon-copy">
+        <div class="profile-info">
+          <div class="modal-cross"></div>
+          <h5>My profile</h5>
+          <div class="cards-profile">
+            <div class="card">
+              <span>Visits</span>
+              <img src="./img/union_profile.svg" alt="union" width="20px" height="21px">
+              <span class="count-of">23</span>
+            </div>
+            <div class="card">
+              <span>Bonuses</span>
+              <img src="./img/star_profile.svg" alt="star" width="20px" height="21px">
+              <span class="count-of">23</span>
+            </div>
+            <div class="card">
+              <span>Books</span>
+              <img src="./img/book_profile.svg" alt="book" width="20px" height="21px">
+              <span class="count-of">23</span>
+            </div>
+          </div>
+          <div class="rented-books">
+            <p>Rented books</p>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </div>
+          <div class="card-number">
+            <span>Card number</span>
+            <span class="number">F00234030</span>
+            <img src="./img/icon_copy.svg" alt="icon-copy">
+          </div>
         </div>
       </div>
     </div>

@@ -126,3 +126,42 @@ radioBtn.forEach((radio, index) => {
     });
 });
 
+/* Модальное окно Log In */
+const logIn = document.getElementById("login");
+const logInChapter = document.getElementById("login-chapter");
+const overlay = document.querySelectorAll('.overlay');
+const btnLogin = document.getElementById("btn-login");
+if (logInChapter || btnLogin) {
+    logInChapter.addEventListener("click", (e) => {
+        logIn.classList.toggle('--active');
+    });
+    btnLogin.addEventListener("click", (e) => {
+        logIn.classList.toggle('--active');
+    });
+    modalClose(logIn);
+}
+
+/* Закрытие модальных окон */
+function modalClose (modalName) {
+    window.addEventListener("click", (e) => {
+        let classes = e.target.classList;
+        if (classes.contains('overlay') || classes.contains('modal-cross')) {
+            modalName.classList.remove('--active');
+        }
+    });
+
+}
+
+/* Модальное окно Register */
+const register = document.getElementById("register");
+const registerChapter = document.getElementById("register-chapter");
+const btnSignup = document.getElementById("btn-signup");
+if (registerChapter || btnSignup) {
+    registerChapter.addEventListener("click", (e) => {
+        register.classList.toggle('--active');
+    });
+    btnSignup.addEventListener("click", (e) => {
+        register.classList.toggle('--active');
+    });
+    modalClose(register);
+}

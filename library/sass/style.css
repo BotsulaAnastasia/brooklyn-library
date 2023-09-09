@@ -1118,11 +1118,30 @@ div#autumn {
   opacity: 1;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(80, 80, 80, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay.--active {
+  display: flex;
+}
+
 .modal-login-register {
+  display: block;
   width: 250px;
   background: #FFF;
   padding: 15px 25px 20px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 2;
 }
 .modal-login-register h5 {
   color: #000;
@@ -1153,7 +1172,7 @@ div#autumn {
   margin-left: 5px;
 }
 .modal-login-register div.modal-cross {
-  left: 220px;
+  right: 15px;
 }
 
 .modal-form {
@@ -1180,13 +1199,17 @@ div#autumn {
 }
 
 .modal-btn-wrapper {
-  margin: 20px auto 5px -20px;
+  margin: 20px auto 5px 0;
 }
 
 .modal-profile {
   width: 600px;
   height: 400px;
   background: #FFF;
+  display: none;
+}
+
+.modal-profile.--active {
   display: flex;
 }
 

@@ -1,9 +1,27 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-overlay;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay.--active {
+    display: flex;
+}
+
 .modal-login-register {
-    //display: none;
+    display: block;
     width: 250px;
     background: #FFF;
     padding: 15px 25px 20px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 2;
     & h5 {
         color: #000;
         font-size: 2rem;
@@ -28,7 +46,7 @@
         margin-left: 5px;
     }
     & div.modal-cross {
-        left: 220px;
+        right: 15px;
     }
 }
 
@@ -51,13 +69,17 @@
 }
 
 .modal-btn-wrapper {
-    margin: 20px auto 5px -20px;
+    margin: 20px auto 5px 0;
 }
 
 .modal-profile {
     width: 600px;
     height: 400px;
     background: #FFF;
+    display: none;
+}
+
+.modal-profile.--active {
     display: flex;
 }
 
