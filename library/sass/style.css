@@ -9,14 +9,12 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Inter", Verdana, sans-serif;
   margin: 0;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -141,6 +139,7 @@ h5 {
   border: 1px solid #0c0c0e;
   margin: 0 auto;
   display: block;
+  pointer-events: none;
 }
 .button--big:hover {
   border: 1px solid #bb945f;
@@ -164,6 +163,12 @@ h5 {
   .button--profile:first-child {
     margin: 0;
   }
+}
+
+.modal-btn-profile.disable {
+  pointer-events: none;
+  border: 1px solid #999;
+  color: #999;
 }
 
 .burger-line, .burger:after, .burger:before {
@@ -254,7 +259,7 @@ h5 {
     max-width: 332px;
     max-height: 570px;
     box-sizing: border-box;
-    transform: translate(100%, 0);
+    transform: translate(0, -100%);
     background: #0c0c0e;
     top: 0;
     right: 0;

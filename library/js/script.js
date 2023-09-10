@@ -130,12 +130,12 @@ radioBtn.forEach((radio, index) => {
 const logIn = document.getElementById("login");
 const logInChapter = document.getElementById("login-chapter");
 const overlay = document.querySelectorAll('.overlay');
-const btnLogin = document.getElementById("btn-login");
+const btnLoginGetCard = document.getElementById("btn-login-get-card");
 if (logInChapter || btnLogin) {
     logInChapter.addEventListener("click", (e) => {
         logIn.classList.toggle('--active');
     });
-    btnLogin.addEventListener("click", (e) => {
+    btnLoginGetCard.addEventListener("click", (e) => {
         logIn.classList.toggle('--active');
     });
     modalClose(logIn);
@@ -155,13 +155,32 @@ function modalClose (modalName) {
 /* Модальное окно Register */
 const register = document.getElementById("register");
 const registerChapter = document.getElementById("register-chapter");
-const btnSignup = document.getElementById("btn-signup");
+const btnSignupGetCard = document.getElementById("btn-signup-get-card");
 if (registerChapter || btnSignup) {
     registerChapter.addEventListener("click", (e) => {
         register.classList.toggle('--active');
     });
-    btnSignup.addEventListener("click", (e) => {
+    btnSignupGetCard.addEventListener("click", (e) => {
         register.classList.toggle('--active');
     });
     modalClose(register);
+}
+
+const inputs = document.querySelectorAll('modal-input');
+const modalBtnProfile = document.querySelectorAll('.modal-btn-profile');
+const email = document.getElementById('e-mail');
+const password = document.getElementById('password');
+/*
+email.oninput = (e) => {
+    console.log(e.target.value);
+}
+
+modalBtnProfile[1].onclick = () => console.log(email);
+*/
+function checkForm() {
+    if(email.target.value && password.target.value) {
+        modalBtnProfile.classList.remove('disable');
+    } else {
+        modalBtnProfile.classList.add('disable');
+    }
 }
