@@ -1,0 +1,19 @@
+.underline-title {
+  @include line(5rem, 0.1rem, $color-primary, 0);
+  margin-bottom: 40px;
+}
+
+.underline-block-heading {
+  @include line(6rem, 0.1rem, $color-additional, 0);
+  margin: -1px 0 0 0;
+}
+
+.shop-menu-stripe {
+  @include line(10rem, 0.1rem, $color-additional, 0);
+  margin: 0;
+}
+
+.underline-profile {
+  @include line(4rem, 0.1rem, $color-additional, 0);
+  margin: 0 auto 15px;
+}

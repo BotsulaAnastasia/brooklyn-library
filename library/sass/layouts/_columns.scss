@@ -1,0 +1,18 @@
+.layout-3-column {
+  display: flex;
+  position: relative;
+  
+  margin: 20px auto;
+  width: 1400px;
+  overflow: hidden;
+  @media screen and (max-width: 1439px) {
+    width: 925px;
+  }
+  @media screen and (max-width: 965px) {
+    width: 450px;
+  }
+}
+
+.layout-2-column {
+  @include columns(40%);
+}

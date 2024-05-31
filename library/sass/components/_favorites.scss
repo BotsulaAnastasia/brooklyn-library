@@ -1,0 +1,136 @@
+.subtitle-favorites {
+  @include font(2rem, normal, 700, normal, normal, none);
+  margin: 41px 0 29px 20px;
+}
+
+.seasons-radio-wrapper {
+  margin-left: 20px;
+  margin-bottom: 29px;
+  height: 45px;
+  @media screen and (max-width: 1250px) {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+    background: #fff;
+  }
+}
+
+.seasons {
+  display: inline-flex;
+  width: 130px;
+  height: 24px;
+  align-items: center;
+  margin-right: 58px;
+  transform: translateY(50%);
+  &:last-child {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+  @media screen and (max-width: 740px) {
+    margin-right: 20px;
+  }
+}
+
+.season-text {
+  @include font(2rem, normal, 400, normal, normal, none);
+  padding: 5px 5px 5px 15px;
+}
+
+.real-radio:checked ~ .season-text {
+  font-weight: 700;
+}
+
+.seasons-var {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:first-child {
+    margin-left: -5px;
+  }
+}
+
+input[type="radio"]:checked + label {
+  font-weight: 700;
+}
+
+.real-radio {
+  -webkit-appearance: none;
+  -moz-appearanceone: none;
+  appearance: none;
+  appearance: none;
+  position: relative;
+  width: 27px;
+  height: 24px;
+  padding: 5px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.radio::before {
+  content: "";
+  position: absolute;
+  top: 18%;
+  left: 18%;
+  display: block;
+  width: 7px;
+  height: 7px;
+  padding: 3px;
+
+  border: 2px solid #0C0C0E;
+  border-radius: 50%;
+}
+
+.radio:checked:before {
+  background-color: #0C0C0E;
+  background-clip: content-box;
+}
+
+.favorite-column {
+  margin: 0 60px 20px 20px;
+  @media screen and (max-width: 1250px) {
+    display: block;
+    width: 590px;
+    margin: 0 auto 60px;
+  }
+}
+
+.block-favorite {
+  position: relative;
+  width: 550px;
+  height: 555px;
+  border: 1px solid #000;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 14px 0 0 19px;
+  margin: 0 0 40px 0;
+}
+
+.block-heading {
+  @extend %font-add;
+  @include font(2rem, normal, 400, 4rem, 2px, capitalize);
+  margin: 0;
+  width: 530px;
+}
+
+.block-capitalize-title {
+  text-transform: capitalize;
+}
+
+.block-favorite-content {
+  @include font(1.5rem, normal, 400, 4rem, 2px, capitalize);
+  padding-right: 174px;
+  margin: 0;
+}
+
+.book-img {
+  position: absolute;
+  right: -40px;
+  bottom: -1px;
+}
+
+div#spring,
+div#summer,
+div#autumn {
+  display: none;
+}

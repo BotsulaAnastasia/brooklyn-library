@@ -1,0 +1,40 @@
+@mixin font($size, $style, $weight, $height, $spacing, $transform) {
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+  text-transform: $transform;
+}
+
+@mixin line($width, $height, $background, $border) {
+  width: $width;
+  height: $height;
+  background: $background;
+  border: $border;
+}
+
+@mixin columns($width) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  > * {
+    flex-basis: $width;
+  }
+}
+
+@mixin media-laptop {
+  @media (max-width: $content-width) { @content; }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) { @content; }
+}
+
+@mixin media-transition {
+  @media (max-width: $transition-width) { @content; }
+}
+
+@mixin media-mobilesmall {
+  @media (max-width: $mobile-small-width) { @content; }
+}

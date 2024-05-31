@@ -1,0 +1,51 @@
+.contacts-container {
+  padding: 0 20px 40px;
+  @include media-transition {
+    margin-top: 580px;
+  }
+}
+
+.contacts-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @media screen and (max-width: 1300px) {
+    display: block;
+  }
+}
+
+.phone-info {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.text-info {
+  &--bold {
+    @include font(2rem, normal, 700, 4rem, 2px, capitalize);
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  &--basic {
+    @include font(2rem, normal, 400, 4rem, 2px, capitalize);
+  }
+  @media screen and (max-width: 1300px) {
+    margin-bottom: 100px;
+  }
+}
+
+.contact-link {
+  color: #000;
+  text-decoration: none;
+  &:hover {
+    color: $color-additional;
+  }
+}
+
+.map {
+  @media screen and (max-width: 1300px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,70 @@
+.button {
+  font-family: "Inter", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  border-radius: 2px;
+  background: #fff;
+  cursor: pointer;
+  @extend %transition;
+  &--buy {
+    position: absolute;
+    font-size: 1rem;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    padding: 8px 26px;
+    bottom: 15px;
+    &:hover {
+      border: 1px solid $color-additional;
+      background: $color-additional;
+    }
+  }
+  &--own {
+    position: absolute;
+    font-size: 1rem;
+    color: $color-additional;
+    padding: 8px 24px;
+    border: 1px solid $color-additional;
+    bottom: 15px;
+    cursor: default;
+  }
+  &--big {
+    font-size: 2rem;
+    color: $color-primary;
+    padding: 9px 39px;
+    border: 1px solid $color-primary;
+    margin: 0 auto;
+    display: block;
+    pointer-events: none;
+    &:hover {
+      border: 1px solid $color-additional;
+      background: $color-additional;
+    }
+  }
+  &--profile {
+    width: 75px;
+    height: 30px;
+    text-align: center;
+    font-size: 1rem;
+    color: $color-primary;
+    padding: 9px 0;
+    border: 1px solid $color-primary;
+    margin-left: 20px;
+    &:hover {
+      border: 1px solid $color-additional;
+      background: $color-additional;
+    }
+    @media screen and (max-width: 1200px) {
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.modal-btn-profile.disable {
+  pointer-events: none;
+  border: 1px solid #999;
+  color: #999;
+}
