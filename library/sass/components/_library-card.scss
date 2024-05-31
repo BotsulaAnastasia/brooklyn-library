@@ -1,0 +1,103 @@
+.library-card-container {
+  padding: 0px 20px 41px;
+  @media screen and (max-width: 1200px) {
+    padding: 0px 0 40px;
+  }
+}
+
+.library-card-content {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.find-card-title {
+  @include font(3rem, normal, 400, normal, 0.6px, none);
+  font-size: 30px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.card-form {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 600px;
+  height: 386px;
+  border: 3px solid $color-additional;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bg-form {
+  width: 560px;
+  height: 272px;
+  background: $color-additional;
+  box-sizing: border-box;
+  padding: 20px 20px 0;
+  margin: 17px 17px 20px;
+}
+
+.bg-form-title {
+  @extend %font-add;
+  @include font(3rem, normal, 400, 5rem, 0.6px, none);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.card-form-input {
+  width: 520px;
+  height: 66px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+
+  color: $color-gray;
+  @extend %font-add;
+  @include font(3rem, normal, 400, 5rem, 0.6px, none);
+}
+
+.get-card {
+  @media screen and (max-width: 1200px) {
+    margin-top: 21px;
+  }
+}
+
+.get-card-title {
+  @extend %font-add;
+  @include font(3rem, normal, 400, normal, 0.6px, none);
+  text-align: right;
+  margin: 0;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+}
+
+.get-card-text {
+  width: 456px;
+  text-align: right;
+  @include font(2rem, normal, 400, 4rem, 0.4px, none);
+  margin: 35px 0 35px auto;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+    margin: 40px auto;
+    width: 600px;
+  }
+}
+
+.get-card-button {
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+  }
+}

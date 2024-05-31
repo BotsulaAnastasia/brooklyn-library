@@ -1,0 +1,39 @@
+.menu-profile {
+    color: #000;
+    width: 80px;
+    height: 115px;
+    background: #FFF;
+    @include font(1.5rem, normal, 400, 2rem, normal, none);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 62px;
+    right: 20px;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+    & p {
+        margin: 0;
+    }
+    & p:first-child {
+        font-weight: 700;
+        margin: 5px auto;
+    }
+    @include media-transition {
+        right: 103px;
+    }
+}
+
+.menu-profile-chapter {
+    cursor: pointer;
+    &:last-child {
+        margin-top: 10px;
+    }
+    &:hover {
+        color: $color-additional;
+    }
+}
+
+.menu-profile.--active {
+    opacity: 1;
+  }

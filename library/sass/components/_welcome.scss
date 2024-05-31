@@ -1,0 +1,32 @@
+.welcome-container {
+  display: flex;
+  background: linear-gradient(
+      180deg,
+      #0c0c0e 0%,
+      #0c0c0e 0.01%,
+      rgba(18, 18, 21, 0.1) 100%
+    ),
+    url("../img/welcome/welcome_bg.jpg"), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    @include media-transition {
+      background: linear-gradient(
+      180deg,
+      #0c0c0e 0%,
+      #0c0c0e 0.01%,
+      rgba(18, 18, 21, 0.1) 100%
+    ),
+    url("../img/welcome/welcome.jpg"), lightgray 50% / cover no-repeat;
+    }
+}
+
+.welcome-content {
+  display: flex;
+  width: 600px;
+  box-sizing: border-box;
+  padding: 35px 40px;
+  margin: 220px auto 160px 0;
+  justify-content: center;
+  align-items: center;
+  background: $color-primary;
+  flex-shrink: 0;
+}

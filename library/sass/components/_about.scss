@@ -1,0 +1,89 @@
+.description {
+  text-align: center;
+  @include font(2rem, normal, 400, 4rem, normal, none);
+  margin: 0;
+  @include media-transition {
+    margin: 0 20px;
+  }
+}
+
+.slider-images {
+  display: flex;
+  position: relative;
+  gap: 25px;
+  transition: all ease-out 0.6s;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px 0 55px;
+  & button:last-child {
+    display: none;
+  }
+  & button:nth-last-child(2) {
+    display: none;
+  }
+  @media screen and (max-width: 1400px) {
+    & button:nth-last-child(2) {
+      display: flex;
+    }
+  }
+  @media screen and (max-width: 955px) {
+    justify-content: center;
+    & button:last-child {
+      display: flex;
+    }
+  }
+}
+
+.slider-dot {
+  border: 0;
+  background: none;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  &:focus .pagination--colour {
+    background: $color-additional;
+  }
+}
+
+.dot--colour {
+  width: 16px;
+  height: 16px;
+  background: $color-primary;
+  border-radius: 50%;
+  border: 0;
+}
+
+.active--dot {
+  & span {
+    background: $color-additional;
+  }
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.carrets {
+  display: none;
+  width: 614px;
+  justify-content: space-between;
+  margin: auto;
+  position: absolute;
+  top: 288px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media screen and (max-width: 965px) {
+    display: flex;
+  }
+}

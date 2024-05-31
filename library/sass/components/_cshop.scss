@@ -1,0 +1,63 @@
+.cshop-container {
+  padding: 0 20px 40px;
+}
+
+.description--cshop {
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.cshop-menu {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.drink-menu {
+  display: inline-flex;
+  width: 438px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.drink-menu-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.shop-menu-content {
+  @include font(2rem, normal, 400, 4rem, 2px, capitalize);
+}
+
+.menu-position {
+  width: 200px;
+}
+
+.menu-price-tag {
+  @extend %font-add;
+}
+
+.desserts-menu {
+  display: flex;
+  width: 482px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+  @include media-transition {
+    position: absolute;
+    right: 0;
+    top: 560px;
+  }
+}
+
+.desserts-menu-line {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 60px;
+}

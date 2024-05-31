@@ -1,0 +1,74 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", Verdana, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  color: $color-header-footer;
+  @extend %font-add;
+  @include font(3rem, normal, 400, 5rem, 0.6px, capitalize);
+  &:hover {
+    color: $color-additional;
+    cursor: pointer;
+    @extend %transition;
+  }
+}
+
+h2 {
+  color: $color-primary;
+  @extend %font-add;
+  @include font(4rem, normal, 400, 4rem, 2px, capitalize);
+  margin: 20px 0;
+  text-align: center;
+}
+
+h3 {
+  color: $color-additional;
+  @extend %font-add;
+  @include font(4rem, normal, 400, 4rem, 2px, capitalize);
+  margin-top: 40;
+  margin-bottom: 0;
+}
+
+h4 {
+  @include font(1.5rem, normal, 700, 4rem, 2px, uppercase);
+}
+
+h5 {
+  color: $color-header-footer;
+  @extend %font-add;
+  @include font(4rem, normal, 400, 5rem, 3px, uppercase);
+  text-align: center;
+  margin: 0;
+}
+
+.modal-cross {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  &::before {
+    top: 40%;
+    left: -1px;
+    transform: rotate(-45deg);
+  }
+  &::after {
+    top: 40%;
+    left: -1px;
+    transform: rotate(45deg);
+  }
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    width: 21.108px;
+    height: 3px;
+    background: $color-primary;
+  }
+}
